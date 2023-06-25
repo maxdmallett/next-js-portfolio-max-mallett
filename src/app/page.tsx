@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import Pill from './components/shared/Pill'
-import PillList from './components/shared/PillList'
 import ProjectCard from './components/ProjectCard'
 
 export default function Home() {

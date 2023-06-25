@@ -2,7 +2,7 @@ import PillList from "./shared/PillList"
 
 const ProjectCard = () => {
     return (
-        <a href="/" className='flex flex-col bg-cyan-900 bg-opacity-50 p-10'>
+        <a href="/" className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
             <h6 className='mb-3'>
                 Frontend Developer @ IR35 Shield
             </h6>
