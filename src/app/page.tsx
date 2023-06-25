@@ -1,4 +1,7 @@
 import ProjectCard from './components/ProjectCard'
+import Experience from './components/home/experience'
+import Hero from './components/home/hero'
+import Projects from './components/home/projects'
 import PillList from './components/shared/PillList'
 
 export default function Home() {
@@ -7,46 +10,9 @@ export default function Home() {
 
             <div className='container bg'>
 
-                <section className='mb-20'>
-                    <h1 className="text-7xl font-bold tracking-tight text-white mb-5">
-                        Max Mallett
-                    </h1>
-                    <h2 className='text-4xl font-extralight text-slate-300 mb-5'>
-                        Frontend Developer
-                    </h2>
-                    <p className='mb-10'>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam <a href='/' className='text-teal-300 font-normal'>IR35 Shield</a>.
-                    </p>
-                    <a
-                        href="#"
-                        className="rounded-sm bg-transparent border border-teal-300 px-5 py-3 text-md font-normal text-teal-300"
-                    >
-                        See my work
-                    </a>
-                </section>
-
-                <section className='mb-20'>
-
-                    <div className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
-                        <h6 className='text-white mb-3'>
-                            Frontend Developer @ IR35 Shield
-                        </h6>
-                        <p className='text-md text-white text-opacity-50 mb-4'>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                        </p>
-                        <PillList pills={['React', 'HTML', 'CSS']}/>
-                    </div>
-
-                </section>
-
-                <section>
-                    <div className='grid grid-cols-2 gap-8'>
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                    </div>
-                </section>
+                <Hero />
+                <Experience />
+                <Projects />
 
             </div>
 
