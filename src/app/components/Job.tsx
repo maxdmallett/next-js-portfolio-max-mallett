@@ -8,17 +8,14 @@ interface IJobsProperties {
 const Job = (props: IJobsProperties) => {
 
     const alignment: string = props.index % 2 === 0 ? 'left' : 'right'
-    //const alignment: string = 'right'
-
-    console.log(props.index);
 
     return (
         <article className="relative flex mb-24">
 
-            <div className='grid grid-cols-9'>
+            <div className='grid grid-cols-11'>
 
                 <div 
-                    className={`col-span-4 flex flex-col
+                    className={`col-span-5 flex flex-col
                     ${alignment === 'left' ? 'text-right' : 'text-left order-last' }`}
                 >
                     <h6 className='text-white text-xl mb-3'>
@@ -38,7 +35,7 @@ const Job = (props: IJobsProperties) => {
                     <div className="w-0.5 h-full bg-white flex-grow-1"></div>
                 </div>
                 
-                <p className={`col-span-4 text-gray-500 uppercase text-sm  mt-1 
+                <p className={`col-span-5 text-gray-500 uppercase text-sm  mt-1 
                     ${alignment === 'left' ? 'text-left' : 'text-right order-first' }`}
                 >
                     2019 - present
