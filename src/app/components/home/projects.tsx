@@ -7,7 +7,7 @@ const Projects = () => {
             
             <SectionHeading title='Projects' />
 
-            <ul className='grid grid-cols-2 gap-8'>
+            <ul className='grid grid-cols-1 gap-12 max-w-4xl mx-auto'>
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />
