@@ -1,10 +1,11 @@
 import Job, { IJob } from "../Job"
+import SectionHeading from "../SectionHeading";
 
 const jobs: IJob[] = [
     {
         title: 'Frontend Developer @ IR35 Shield',
         description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
-        skills: ['React', 'Typescript', 'SCSS', 'Redux', 'Jest', 'React Testing Library'],
+        skills: ['React', 'Typescript', 'SCSS', 'Redux', 'Jest', 'RTL'],
         timeframe: '2019 - present'
     },
     {
@@ -42,7 +43,9 @@ const jobs: IJob[] = [
 const Experience = () => {
 
     return (
-        <section className='mb-20'>
+        <section className='py-24'>
+
+           <SectionHeading title='Experience' />
 
             {
                 jobs.map((job, index) => (

@@ -1,10 +1,9 @@
-import Head from 'next/head'
-import ProjectCard from './components/ProjectCard'
 import Experience from './components/home/experience'
 import Hero from './components/home/hero'
-import Projects from './components/home/projects'
-import PillList from './components/shared/PillList'
 import Navbar from './components/Navbar'
+import Projects from './components/home/projects'
+import OtherProjects from './components/home/otherProjects'
+import Contact from './components/home/contact'
 
 export default function Home() {
     return (
@@ -14,14 +13,14 @@ export default function Home() {
 
             <main className="flex min-h-screen flex-col items-center justify-between">
 
-                
-
                 <div className='container max-w-screen-lg mx-auto'>
 
 
                     <Hero />
                     <Experience />
                     <Projects />
+                    <OtherProjects />
+                    <Contact />
 
                 </div>
 

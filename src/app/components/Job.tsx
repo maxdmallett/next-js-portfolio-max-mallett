@@ -16,7 +16,7 @@ const Job = (props: IJobsProperties) => {
     const alignment: string = props.index % 2 === 0 ? 'left' : 'right'
 
     return (
-        <article className="relative flex mb-24">
+        <article className="relative flex mb-20 last:mb-0">
 
             <div className='grid grid-cols-11'>
 

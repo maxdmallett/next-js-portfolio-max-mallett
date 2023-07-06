@@ -1,14 +1,18 @@
 import ProjectCard from "../ProjectCard"
+import SectionHeading from "../SectionHeading"
 
 const Projects = () => {
     return (
-        <section>
-            <div className='grid grid-cols-2 gap-8'>
+        <section className='py-24'>
+            
+            <SectionHeading title='Projects' />
+
+            <ul className='grid grid-cols-2 gap-8'>
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />
-            </div>
+            </ul>
         </section>
     )
 }
