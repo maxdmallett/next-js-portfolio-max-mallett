@@ -5,7 +5,7 @@ interface IProps {
 const Pill = (props: IProps) => {
     return (
         <li 
-            className='bg-teal-800 text-teal-300 rounded-full p-1 px-2.5 text-center text-sm select-none mr-1.5 whitespace-nowrap'
+            className='bg-teal-800 text-teal-300 rounded-full p-1 px-2.5 text-center text-sm select-none mr-1.5 whitespace-nowrap last:mr-0'
         > 
             {props.text}
         </li>
