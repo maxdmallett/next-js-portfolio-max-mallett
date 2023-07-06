@@ -15,7 +15,6 @@ export default function Home() {
 
                 <div className='container max-w-screen-lg mx-auto'>
 
-
                     <Hero />
                     <Experience />
                     <Projects />
@@ -131,6 +130,9 @@ export default function Home() {
                     </a>
                 </div> */}
             </main>
+            <footer>
+                
+            </footer>
         </>
     )
 }
