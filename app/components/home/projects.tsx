@@ -1,5 +1,5 @@
-import ProjectCard from "../ProjectCard"
-import SectionHeading from "../SectionHeading"
+import ProjectCard from "./projectCard"
+import SectionHeading from "../sectionHeading"
 
 const Projects = () => {
     return (

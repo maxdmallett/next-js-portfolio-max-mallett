@@ -1,5 +1,5 @@
 import React from 'react'
-import PillList from './shared/PillList'
+import PillList from '../pillList';
 export interface IJob {
     title: string;
     description: string;

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import PillList from './shared/PillList'
+import PillList from '../pillList'
 
 const ProjectCard = () => {
     return (

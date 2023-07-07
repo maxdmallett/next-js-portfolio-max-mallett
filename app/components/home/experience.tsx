@@ -1,5 +1,5 @@
-import Job, { IJob } from "../Job"
-import SectionHeading from "../SectionHeading";
+import Job, { IJob } from "./job"
+import SectionHeading from "../sectionHeading";
 
 const jobs: IJob[] = [
     {

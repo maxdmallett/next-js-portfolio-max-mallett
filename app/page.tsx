@@ -1,9 +1,9 @@
+import Contact from './components/home/contact'
 import Experience from './components/home/experience'
 import Hero from './components/home/hero'
-import Navbar from './components/Navbar'
-import Projects from './components/home/projects'
 import OtherProjects from './components/home/otherProjects'
-import Contact from './components/home/contact'
+import Projects from './components/home/projects'
+import Navbar from './components/navbar'
 
 export default function Home() {
     return (

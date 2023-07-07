@@ -1,4 +1,4 @@
-import Pill from "./Pill";
+import Pill from "./pill";
 
 interface IPillListProps {
     pills: string[];

@@ -1,9 +1,10 @@
-import PillList from "./shared/PillList"
+import Link from "next/link"
+import PillList from "../pillList"
 
 const OtherProjectCard = () => {
     return (
         <li>
-            <a href="/" className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
+            <Link href="/projects/react-migration-ir35-shield-dashboard" className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
                 <h6 className='text-white mb-3'>
                     Frontend Developer @ IR35 Shield
                 </h6>
@@ -16,7 +17,7 @@ const OtherProjectCard = () => {
                         2019 - Present
                     </span>
                 </div>
-            </a>
+            </Link>
         </li>
     )
 }

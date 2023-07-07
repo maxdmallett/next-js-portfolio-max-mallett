@@ -1,5 +1,4 @@
-import OtherProjectCard from "../OtherProjectCard"
-import SectionHeading from "../SectionHeading"
+import SectionHeading from "../sectionHeading"
 
 const Contact = () => {
     return (
