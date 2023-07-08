@@ -25,7 +25,7 @@ const ReactMigrationIR35ShieldDashboard = () => {
                                 alt="placeholder"
                                 width={800}
                                 height={550}
-                                className='rounded-md border border-zinc-200'
+                                className='rounded-md border border-zinc-200 shadow-sm'
                             />
                         </a>
 
