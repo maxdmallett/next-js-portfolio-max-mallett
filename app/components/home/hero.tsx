@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className='text-center h-screen flex flex-col justify-center'>
+        <header className='text-center h-screen flex flex-col justify-center'>
            
             <h1 className="text-7xl font-bold tracking-tight text-slate-200 mb-5">
                 Max Mallett
@@ -22,7 +22,7 @@ const Hero = () => {
                 </a>
             </div>
             
-        </section>
+        </header>
     )
 }
 

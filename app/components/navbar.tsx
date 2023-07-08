@@ -1,13 +1,28 @@
+'use client'
+
 import Link from "next/link"
+import { useEffect } from "react";
+
+const navigation = [
+    "Home",
+    "Experience",
+    "Projects",
+    "Contact",
+];
 
 const Navbar = () => {
 
-    const navigation = [
-        "Home",
-        "Experience",
-        "Projects",
-        "Contact",
-    ];
+   /*  const handleScroll = () => {
+        console.log(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }   
+    }); */
 
     return (
         
