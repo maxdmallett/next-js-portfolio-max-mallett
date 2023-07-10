@@ -37,19 +37,19 @@ export const projects: Project[] = [
         skills: ['NextJS', 'TypeScript', 'SCSS', 'Photoshop']
     },
     {
-        title: 'Vinnie Drop Mobile Game & Website',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        cardImageUrl: '/Dashboard_1.png',
-        skills: ['Adobe Animate', 'ActionScript 3', 'Javascript']
-    },
-    {
         title: 'Ambrasoft Flash to Canvas Game Conversions',
         shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
         cardImageUrl: '/Dashboard_1.png',
         skills: ['Javascript', 'Canvas', 'CreateJS', 'Illustrator']
     },
     {
-        title: 'HyperFox Band Website',
+        title: 'Vinnie Drop Mobile Game & Website',
+        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
+        cardImageUrl: '/Dashboard_1.png',
+        skills: ['Adobe Animate', 'ActionScript 3', 'Javascript']
+    },
+    {
+        title: 'hyperfoxband.co.uk',
         shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
         cardImageUrl: '/Dashboard_1.png',
         skills: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Photoshop']
