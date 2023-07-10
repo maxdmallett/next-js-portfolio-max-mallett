@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import PillList from '../pillList'
+import { Project } from '../../data/projects'
 
-const ProjectCard = () => {
+const ProjectCard = (props: Project) => {
     return (
         <li className='flex'>
 
             <div className='w-96 mr-10'>
                 <a className='block rounded-md overflow-hidden border-2 border-slate-100/50'>
                     <Image
-                        src="/Dashboard_1.png"
-                        alt="placeholder"
+                        src={props.cardImageUrl}
+                        alt={props.title}
                         width={400}
                         height={300}
                         className=''
@@ -19,12 +20,12 @@ const ProjectCard = () => {
 
             <div>
                 <h3 className='text-white text-xl mb-3 font-medium'>
-                    React migration of IR35 Shield Dashboard
+                    {props.title}
                 </h3>
                 <p className='text-md text-white text-opacity-50 mb-4'>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    {props.shortDescription}
                 </p>
-                <PillList pills={['React', 'HTML', 'CSS']}/>
+                <PillList pills={props.skills}/>
             </div>
            
         </li>

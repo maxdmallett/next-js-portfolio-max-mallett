@@ -1,5 +1,6 @@
 import OtherProjectCard from "./otherProjectCard"
 import SectionHeading from "../sectionHeading"
+import { projects } from "../../data/projects"
 
 const OtherProjects = () => {
     return (
@@ -8,10 +9,14 @@ const OtherProjects = () => {
             <SectionHeading title='Other Projects' />
 
             <ul className='grid grid-cols-2 gap-8'>
-                <OtherProjectCard />
-                <OtherProjectCard />
-                <OtherProjectCard />
-                <OtherProjectCard />
+                {
+                    projects.slice(4, 8).map((project, index) => (
+                        <OtherProjectCard
+                            {...project}
+                            key={index}
+                        />
+                    ))
+                }
             </ul>
         </section>
     )
