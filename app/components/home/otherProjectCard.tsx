@@ -5,7 +5,7 @@ import { Project } from "../../data/projects"
 const OtherProjectCard = (props: Project) => {
     return (
         <li>
-            <Link href="/projects/react-migration-ir35-shield-dashboard" className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
+            <Link href={`/projects/${props.slug}`} className='flex flex-col bg-cyan-900 bg-opacity-30 p-10'>
                 <h6 className='text-white mb-3'>
                     {props.title}
                 </h6>

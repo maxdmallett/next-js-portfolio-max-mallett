@@ -1,9 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import Hero from '../../components/projects/hero'
 import Navbar from '../../components/navbar'
 
-const ReactMigrationIR35ShieldDashboard = () => {
+const ProjectPage = () => {
+
     return (
         <>
 
@@ -57,5 +60,5 @@ const ReactMigrationIR35ShieldDashboard = () => {
     )
 }
 
-export default ReactMigrationIR35ShieldDashboard
+export default ProjectPage
 
