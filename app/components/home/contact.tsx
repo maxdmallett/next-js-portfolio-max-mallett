@@ -2,7 +2,7 @@ import SectionHeading from "../sectionHeading"
 
 const Contact = () => {
     return (
-        <section className='py-24'>
+        <section id="contact" className='py-24'>
             
             <SectionHeading title='Contact' />
 
