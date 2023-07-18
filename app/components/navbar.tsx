@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const navigation = [
     "Home",
@@ -36,8 +36,10 @@ const navLinks: NavLink[] = [
 
 const Navbar = () => {
 
-   /*  const handleScroll = () => {
-        console.log(window.scrollY);
+    const [showBg, setShowBg] = useState<boolean>(false);
+
+    const handleScroll = () => {
+        setShowBg(window.scrollY > 100);
     };
 
     useEffect(() => {
@@ -46,11 +48,15 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }   
-    }); */
+    });
 
     return (
         
-        <nav className="fixed flex flex-wrap items-center justify-end py-8 w-full px-10 mx-auto">
+        <nav 
+            className={`fixed flex flex-wrap items-center justify-end py-8 w-full px-10 mx-auto z-10 transition-colors
+            ${showBg ? 'bg-sky-950/50 backdrop-blur py-5' : ''}
+            `}
+        >
 
             <div className="hidden text-center lg:flex lg:items-center">
                 <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">

@@ -1,3 +1,4 @@
+import Footer from './components/footer'
 import Contact from './components/home/contact'
 import Experience from './components/home/experience'
 import Hero from './components/home/hero'
@@ -130,9 +131,7 @@ export default function Home() {
                     </a>
                 </div> */}
             </main>
-            <footer>
-                
-            </footer>
+            <Footer />
         </>
     )
 }
