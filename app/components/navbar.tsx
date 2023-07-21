@@ -3,13 +3,6 @@
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
-const navigation = [
-    "Home",
-    "Experience",
-    "Projects",
-    "Contact",
-];
-
 interface NavLink {
     label: string;
     url: string;

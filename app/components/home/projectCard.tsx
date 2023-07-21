@@ -23,8 +23,11 @@ const ProjectCard = (props: Project) => {
             </div>
 
             <div>
-                <Link href={`/projects/${props.slug}`}>
-                    <h3 className='text-white text-xl mb-3 font-medium'>
+                <Link 
+                    href={`/projects/${props.slug}`}
+                    className='text-white text-xl mb-3 font-medium hover:text-teal-400 transition-colors ease-in-out'
+                >
+                    <h3>
                         {props.title}
                     </h3>
                 </Link>

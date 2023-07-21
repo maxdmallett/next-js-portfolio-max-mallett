@@ -20,8 +20,12 @@ const Job = (props: IJobsProperties) => {
                     className={`col-span-5 flex flex-col
                     ${alignment === 'left' ? 'text-right' : 'text-left order-last' }`}
                 >
-                    <Link href={props.url} target='_blank'>
-                        <h6 className='text-white text-xl mb-3'>
+                    <Link 
+                        href={props.url}
+                        target='_blank'
+                        className='text-white text-xl mb-3 hover:text-teal-400 transition-colors ease-in-out'
+                    >
+                        <h6 className=''>
                             {props.title}
                         </h6>
                     </Link>

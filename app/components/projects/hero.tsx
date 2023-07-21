@@ -1,13 +1,21 @@
-const Hero = () => {
+'use client'
+
+import { Project } from "../../data/projects"
+
+interface IProps {
+    project: Project;
+}
+
+const Hero = (props: IProps) => {
     return (
         <header className='text-center pt-40 pb-32 flex flex-col justify-center'>
            
             <h1 className="text-5xl font-bold tracking-tight text-slate-200 mb-5">
-                React migration of IR35 Shield Dashboard
+                {props.project.title}
             </h1>
 
             <p className='mb-5 text-lg pb-3 max-w-xl mx-auto'>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.
+                {props.project.shortDescription}
             </p>
 
             <div>
