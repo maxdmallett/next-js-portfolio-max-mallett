@@ -4,8 +4,15 @@ import Image from 'next/image'
 import React from 'react'
 import Hero from '../../components/projects/hero'
 import Navbar from '../../components/navbar'
+import { Project, projects } from '../../data/projects'
 
-const ProjectPage = () => {
+const ProjectPage = (props: any) => {
+
+    const project: Project = projects.filter(({slug}) => {
+        return slug === props.params.slug;
+    })[0];
+
+    console.log(project);
 
     return (
         <>
@@ -15,7 +22,9 @@ const ProjectPage = () => {
             <main className="flex min-h-screen flex-col items-center justify-between">
 
                 <div className='container max-w-screen-lg mx-auto'>
-                    <Hero />
+                    <Hero 
+                        project={project}
+                    />
                 </div>
 
                 <section className='bg-zinc-50 text-slate-900 w-full py-16'>

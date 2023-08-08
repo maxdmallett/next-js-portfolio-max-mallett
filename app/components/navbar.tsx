@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import { useEffect, useState } from "react";
 interface NavItem {
     label: string;
     href: string;
@@ -32,8 +33,10 @@ const navigation: NavItem[] = [
 
 const Navbar = () => {
 
-   /*  const handleScroll = () => {
-        console.log(window.scrollY);
+    const [showBg, setShowBg] = useState<boolean>(false);
+
+    const handleScroll = () => {
+        setShowBg(window.scrollY > 100);
     };
 
     useEffect(() => {
@@ -42,7 +45,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }   
-    }); */
+    });
 
     const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
 
@@ -57,7 +60,11 @@ const Navbar = () => {
 
     return (
         
-        <nav className="fixed flex flex-wrap items-center justify-end py-8 w-full px-10 mx-auto">
+        <nav 
+            className={`fixed flex flex-wrap items-center justify-end py-8 w-full px-10 mx-auto z-10 transition-colors
+            ${showBg ? 'bg-sky-950/50 backdrop-blur py-5' : ''}
+            `}
+        >
 
             <div className="hidden text-center lg:flex lg:items-center">
                 <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
@@ -77,7 +84,7 @@ const Navbar = () => {
             </div>
 
             <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                <Link href="/" className="px-6 py-1.5 text-teal-300 bg-transparent border border-teal-300 rounded-md md:ml-5">
+                <Link href="/" className="px-6 py-1.5 text-teal-300 bg-transparent border border-teal-300 rounded-md md:ml-5 hover:bg-teal-500 hover:border-transparent hover:text-white transition duration-200 ease-in-out">
                     CV
                 </Link>
             </div>

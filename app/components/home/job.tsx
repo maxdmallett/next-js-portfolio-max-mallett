@@ -1,11 +1,7 @@
 import React from 'react'
 import PillList from '../pillList';
-export interface IJob {
-    title: string;
-    description: string;
-    skills: string[];
-    timeframe: string;
-}
+import Link from 'next/link';
+import { IJob } from '../../data/jobs';
 
 interface IJobsProperties extends IJob {
     index: number;
@@ -24,9 +20,15 @@ const Job = (props: IJobsProperties) => {
                     className={`col-span-5 flex flex-col
                     ${alignment === 'left' ? 'text-right' : 'text-left order-last' }`}
                 >
-                    <h6 className='text-white text-xl mb-3'>
-                        {props.title}
-                    </h6>
+                    <Link 
+                        href={props.url}
+                        target='_blank'
+                        className='text-white text-xl mb-3 hover:text-teal-400 transition-colors ease-in-out'
+                    >
+                        <h6 className=''>
+                            {props.title}
+                        </h6>
+                    </Link>
                     <p className='text-md text-white text-opacity-50 mb-4'>
                         {props.description}
                     </p>

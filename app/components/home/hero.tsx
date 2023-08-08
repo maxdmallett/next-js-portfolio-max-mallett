@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Hero = () => {
     return (
         <header id="hero" className='text-center h-screen flex flex-col justify-center'>
@@ -14,12 +16,12 @@ const Hero = () => {
             </p>
 
             <div>
-                <a
-                    href="#"
+                <Link
+                    href="#experience"
                     className="inline-block flex-grow-0 rounded-md bg-transparent border border-teal-300 px-5 py-3 text-md font-normal text-teal-300 hover:bg-teal-500 hover:border-transparent hover:text-white transition duration-200 ease-in-out"
                 >
                     See my work
-                </a>
+                </Link>
             </div>
             
         </header>

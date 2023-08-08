@@ -1,0 +1,15 @@
+// TO DO 
+
+- Scroll to section animations
+- Dynamic project page loading
+- Navbar background on scroll down
+- Resonsive menu
+- Responsive rest of page
+- Link styles
+- Copy
+- Footer
+
+// EXTRAS
+
+- Change colour theme
+- Animate stuff with Framer

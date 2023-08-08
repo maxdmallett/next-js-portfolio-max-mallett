@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import PillList from '../pillList'
 import { Project } from '../../data/projects'
+import Link from 'next/link'
 
 const ProjectCard = (props: Project) => {
     return (
         <li className='flex'>
 
             <div className='w-96 mr-10'>
-                <a className='block rounded-md overflow-hidden border-2 border-slate-100/50'>
+                <Link 
+                    href={`/projects/${props.slug}`}
+                    className='block rounded-md overflow-hidden border-2 border-slate-100/50'
+                >
                     <Image
                         src={props.cardImageUrl}
                         alt={props.title}
@@ -15,13 +19,18 @@ const ProjectCard = (props: Project) => {
                         height={300}
                         className=''
                     />
-                </a>
+                </Link>
             </div>
 
             <div>
-                <h3 className='text-white text-xl mb-3 font-medium'>
-                    {props.title}
-                </h3>
+                <Link 
+                    href={`/projects/${props.slug}`}
+                    className='text-white text-xl mb-3 font-medium hover:text-teal-400 transition-colors ease-in-out'
+                >
+                    <h3>
+                        {props.title}
+                    </h3>
+                </Link>
                 <p className='text-md text-white text-opacity-50 mb-4'>
                     {props.shortDescription}
                 </p>
