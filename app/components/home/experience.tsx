@@ -43,7 +43,7 @@ const jobs: IJob[] = [
 const Experience = () => {
 
     return (
-        <section className='py-24'>
+        <section id="experience" className='py-24'>
 
            <SectionHeading title='Experience' />
 
