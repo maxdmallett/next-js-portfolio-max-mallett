@@ -8,7 +8,7 @@ interface NavItem {
     sectionId: string;
 }
 
-const navigation: NavItem[] = [
+const navItems: NavItem[] = [
     {
         label: 'Home',
         href: '/',
@@ -68,7 +68,7 @@ const Navbar = () => {
 
             <div className="hidden text-center lg:flex lg:items-center">
                 <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-                    {navigation.map((item, index) => (
+                    {navItems.map((item, index) => (
                         <li className="mr-3 nav__item" key={index}>
                             <Link 
                                 href={`${item.href}`}
