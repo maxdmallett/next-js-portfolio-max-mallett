@@ -14,7 +14,7 @@ const Hero = (props: IProps) => {
                 {props.project.title}
             </h1>
 
-            <p className='mb-5 text-lg pb-3 max-w-xl mx-auto'>
+            <p className='mb-5 text-lg pb-3 max-w-2xl mx-auto'>
                 {props.project.shortDescription}
             </p>
 
