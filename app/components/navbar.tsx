@@ -1,7 +1,8 @@
 'use client'
 
 import Link from "next/link"
-import { useEffect, useState } from "react";
+import { DOMElement, useEffect, useState } from "react";
+import { scrollToElement } from "../helpers/scrollTo";
 interface NavItem {
     label: string;
     href: string;
@@ -54,7 +55,7 @@ const Navbar = () => {
 
         if (scrollTarget) {
             event.preventDefault();
-            scrollTarget.scrollIntoView({behavior: 'smooth'});
+            scrollToElement(scrollTarget);
         }
     }
 
