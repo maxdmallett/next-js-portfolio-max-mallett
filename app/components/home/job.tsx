@@ -14,11 +14,11 @@ const Job = (props: IJobsProperties) => {
     return (
         <article className="relative flex mb-20 last:mb-0">
 
-            <div className='grid grid-cols-11'>
+            <div className='grid md:grid-cols-11'>
 
                 <div 
-                    className={`col-span-5 flex flex-col
-                    ${alignment === 'left' ? 'text-right' : 'text-left order-last' }`}
+                    className={`md:col-span-5 flex flex-col
+                    ${alignment === 'left' ? 'md:text-right' : 'text-left order-last' }`}
                 >
                     <Link 
                         href={props.url}
@@ -32,19 +32,18 @@ const Job = (props: IJobsProperties) => {
                     <p className='text-md text-white text-opacity-50 mb-4'>
                         {props.description}
                     </p>
-                    <div className={`${alignment === 'left' ? 'ms-auto' : ''}`}>
-
+                    <div className={`${alignment === 'left' ? 'md:ms-auto' : ''}`}>
                         <PillList pills={props.skills}/>
                     </div>
                 </div>
 
-                <div className="col-span-1 flex flex-col items-center pt-1.5">
+                <div className="hidden md:col-span-1 md:flex flex-col items-center pt-1.5">
                     <div className="w-4 h-4 flex-shrink-0 bg-teal-300 rounded-full mb-4"></div>
                     <div className="w-0.5 h-full bg-white flex-grow-1"></div>
                 </div>
                 
-                <p className={`col-span-5 text-gray-500 uppercase text-sm  mt-1 
-                    ${alignment === 'left' ? 'text-left' : 'text-right order-first' }`}
+                <p className={`md:col-span-5 text-gray-500 uppercase text-sm  mt-1 
+                    ${alignment === 'left' ? 'text-left' : 'md:text-right md:order-first' }`}
                 >
                     {props.timeframe}
                 </p>

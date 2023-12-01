@@ -5,7 +5,7 @@ import { jobs } from "../../data/jobs";
 const Experience = () => {
 
     return (
-        <section id="experience" className='py-24'>
+        <section id="experience" className='py-24 px-5'>
 
            <SectionHeading title='Experience' />
 
