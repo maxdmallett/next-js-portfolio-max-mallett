@@ -4,7 +4,7 @@ import { projects } from "../../data/projects"
 
 const Projects = () => {
     return (
-        <section id="projects" className='py-24'>
+        <section id="projects" className='py-12 sm:py-24'>
             
             <SectionHeading title='Projects' />
 

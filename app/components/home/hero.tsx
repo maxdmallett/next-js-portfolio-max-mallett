@@ -4,10 +4,10 @@ const Hero = () => {
     return (
         <header id="hero" className='text-center h-screen flex flex-col justify-center'>
            
-            <h1 className="text-7xl font-bold tracking-tight text-slate-200 mb-5">
+            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-slate-200 mb-5">
                 Max Mallett
             </h1>
-            <h2 className='text-6xl font-extrabold text-slate-500 mb-6'>
+            <h2 className='text-3xl sm:text-6xl font-extrabold text-slate-500 mb-6'>
                 Frontend Developer
             </h2>
 

@@ -6,7 +6,7 @@ interface IPillListProps {
 
 const PillList = (props: IPillListProps) => {
     return (
-        <ul className="flex flex-wrap">
+        <ul className="flex flex-wrap gap-y-2">
             {
                 props.pills.map((pill, index) => {
                     return (
