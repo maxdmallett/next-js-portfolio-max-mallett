@@ -8,7 +8,7 @@ interface IProps {
 
 const Content = (props: IProps) => {
     return (
-        <div className='container max-w-screen-sm mx-auto leading-relaxed'>
+        <div className='container max-w-screen-sm mx-auto leading-relaxed px-5 sm:px-0'>
 
             <a href="/" className='block mb-12'>
                 <Image

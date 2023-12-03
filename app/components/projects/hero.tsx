@@ -8,13 +8,13 @@ interface IProps {
 
 const Hero = (props: IProps) => {
     return (
-        <header className='text-center pt-40 pb-32 flex flex-col justify-center'>
+        <header className='text-center pt-40 pb-32 flex flex-col justify-center px-5 sm:px-0'>
            
-            <h1 className="text-5xl font-bold tracking-tight text-slate-200 mb-5">
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-200 mb-5">
                 {props.project.title}
             </h1>
 
-            <p className='mb-5 text-lg pb-3 max-w-2xl mx-auto'>
+            <p className='text-md sm:text-lg pb-3 max-w-2xl mx-auto mb-5'>
                 {props.project.shortDescription}
             </p>
 
