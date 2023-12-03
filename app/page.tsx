@@ -12,7 +12,7 @@ export default function Home() {
 
             <Navbar />
 
-            <main className="flex min-h-screen flex-col items-center justify-between px-5 sm:px-0">
+            <main className="flex min-h-screen flex-col items-center justify-between px-5 xl:px-0">
 
                 <div className='container max-w-screen-lg mx-auto'>
 
