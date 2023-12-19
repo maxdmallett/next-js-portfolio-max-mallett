@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import Hero from '../../components/projects/hero'
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/nav/navbar'
 import { Project, projects } from '../../data/projects'
 import Content from '../../components/projects/content'
 import Footer from '../../components/footer'

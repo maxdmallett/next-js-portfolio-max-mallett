@@ -1,40 +1,15 @@
 'use client'
 
 import Link from "next/link"
-import { DOMElement, useEffect, useState } from "react";
-import { scrollToElement } from "../helpers/scrollTo";
-interface NavItem {
-    label: string;
-    href: string;
-    sectionId: string;
-}
-
-const navItems: NavItem[] = [
-    {
-        label: 'Home',
-        href: '/',
-        sectionId: 'hero',
-    },
-    {
-        label: 'Experience',
-        href: '/#experience',
-        sectionId: 'experience',
-    },
-    {
-        label: 'Projects',
-        href: '/#projects',
-        sectionId: 'projects',
-    },
-    {
-        label: 'Contact',
-        href: '/#contact',
-        sectionId: 'contact',
-    },
-];
+import { useEffect, useState } from "react";
+import { scrollToElement } from "../../helpers/scrollTo";
+import MobileNavMenu from "./mobileNavMenu";
+import { navItems } from "./navData";
 
 const Navbar = () => {
 
     const [showBg, setShowBg] = useState<boolean>(false);
+    const [mobileMenuVisible, setMobileMenuVisible] = useState<boolean>(false);
 
     const handleScroll = () => {
         setShowBg(window.scrollY > 100);
@@ -52,11 +27,20 @@ const Navbar = () => {
 
         const sectionId: string = event.currentTarget.getAttribute('data-sectionid') || '';
         const scrollTarget = document.getElementById(sectionId);
-
+    
         if (scrollTarget) {
             event.preventDefault();
             scrollToElement(scrollTarget);
         }
+    }
+
+    const hamburgerButtonClicked = () => {
+        toggleMobileMenu(true);
+    }
+
+    const toggleMobileMenu = (visible: boolean) => {
+        visible ? document.body.classList.add('position-fixed') : document.body.classList.remove('position-fixed');
+        setMobileMenuVisible(visible)
     }
 
     return (
@@ -90,12 +74,17 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <button className="lg:hidden navbar-burger flex items-center text-white p-3">
+            <button className="lg:hidden navbar-burger flex items-center text-white p-3" onClick={hamburgerButtonClicked}>
                 <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Mobile menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                 </svg>
             </button>
+
+            <MobileNavMenu
+                visible={mobileMenuVisible}
+                closeMenu={() => toggleMobileMenu(false)}
+            />
 
         </nav>
        

@@ -35,3 +35,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.position-fixed {
+    overflow: hidden;
+}
+
+.mobile-nav-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.mobile-nav-menu.open {
+    transform: translateX(0);
+}

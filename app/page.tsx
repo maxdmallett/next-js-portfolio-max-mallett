@@ -4,7 +4,7 @@ import Experience from './components/home/experience'
 import Hero from './components/home/hero'
 import OtherProjects from './components/home/otherProjects'
 import Projects from './components/home/projects'
-import Navbar from './components/navbar'
+import Navbar from './components/nav/navbar'
 
 export default function Home() {
     return (
