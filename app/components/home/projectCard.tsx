@@ -7,7 +7,7 @@ const ProjectCard = (props: Project) => {
     return (
         <li className='flex'>
 
-            <div className='w-96 mr-10'>
+            <div className='w-96 mr-5 lg:mr-10'>
                 <Link 
                     href={`/projects/${props.slug}`}
                     className='block rounded-md overflow-hidden border-2 border-slate-100/50'
