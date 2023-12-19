@@ -35,19 +35,24 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <ul className="items-start flex flex-col list-none mt-20 ms-5">
+            <ul className="items-start flex flex-col list-none mt-16 ms-5">
                 {navItems.map((item, index) => (
                     <li key={index}>
                         <Link 
                             href={`${item.href}`}
                             data-sectionid={item.sectionId}
                             onClick={handleLinkClick}
-                            className="inline-block px-4 py-2 mb-3 text-lg font-normal text-slate-400  hover:text-white focus:text-white uppercase"
+                            className="block px-4 py-2 mb-3 text-lg font-normal text-slate-400 uppercase"
                         >
                             {item.label}
                         </Link>
                     </li>
                 ))}
+                <li>
+                    <Link href="/" className="block px-4 py-2 mb-3 text-lg font-normal text-teal-300 uppercase">
+                        CV
+                    </Link>
+                </li>
             </ul>
         </div>
     )
