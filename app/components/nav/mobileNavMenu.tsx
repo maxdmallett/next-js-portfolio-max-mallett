@@ -2,6 +2,7 @@ import React from 'react'
 import Link from "next/link"
 import { navItems } from './navData';
 import { scrollToElement } from '../../helpers/scrollTo';
+import { handleRouteLinkClick } from '../../helpers/handleRouteLinkClick';
 
 interface MobileNavMenuProps {
     visible: boolean;
@@ -13,15 +14,8 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
     const { visible, closeMenu } = props;
 
     const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-
-        const sectionId: string = event.currentTarget.getAttribute('data-sectionid') || '';
-        const scrollTarget = document.getElementById(sectionId);
-    
-        if (scrollTarget) {
-            event.preventDefault();
-            closeMenu();
-            scrollToElement(scrollTarget);
-        }
+        handleRouteLinkClick(event);
+        closeMenu();
     }
 
     return (

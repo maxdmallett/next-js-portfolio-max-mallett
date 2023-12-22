@@ -2,20 +2,9 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react";
-import { scrollToElement } from "../../helpers/scrollTo";
 import MobileNavMenu from "./mobileNavMenu";
 import { navItems } from "./navData";
-
-export const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-
-    const sectionId: string = event.currentTarget.getAttribute('data-sectionid') || '';
-    const scrollTarget = document.getElementById(sectionId);
-
-    if (scrollTarget) {
-        event.preventDefault();
-        scrollToElement(scrollTarget);
-    }
-}
+import { handleRouteLinkClick } from "../../helpers/handleRouteLinkClick";
 
 const Navbar = () => {
 
@@ -54,7 +43,7 @@ const Navbar = () => {
                             <Link 
                                 href={`${item.href}`}
                                 data-sectionid={item.sectionId}
-                                onClick={handleLinkClick}
+                                onClick={handleRouteLinkClick}
                                 className="inline-block px-4 py-2 text-md font-normal text-slate-400  hover:text-white focus:text-white uppercase"
                             >
                                 {item.label}
