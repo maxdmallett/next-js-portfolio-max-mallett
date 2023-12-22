@@ -5,15 +5,15 @@ import Link from 'next/link'
 
 const ProjectCard = (props: Project) => {
     return (
-        <li className='flex'>
+        <li className='flex flex-col lg:flex-row'>
 
-            <div className='w-96 mr-5 lg:mr-10'>
+            <div className='w-full lg:w-1/3 mr-5 lg:mr-10 mb-4 lg:mb-0'>
                 <Link 
                     href={`/projects/${props.slug}`}
                     className='block rounded-md overflow-hidden border-2 border-slate-100/50'
                 >
                     <Image
-                        src={props.cardImageUrl ? props.cardImageUrl : '/projects/placeholder.png'}
+                        src={props.thumbnailImageUrl ? props.thumbnailImageUrl : '/projects/placeholder.png'}
                         alt={props.title}
                         width={400}
                         height={300}
@@ -22,10 +22,10 @@ const ProjectCard = (props: Project) => {
                 </Link>
             </div>
 
-            <div>
+            <div className='w-full lg:w-2/3'>
                 <Link 
                     href={`/projects/${props.slug}`}
-                    className='text-white text-xl mb-3 font-medium hover:text-teal-400 transition-colors ease-in-out'
+                    className='inline-block text-white text-xl mb-2 lg:mb-1 font-medium hover:text-teal-400 transition-colors ease-in-out'
                 >
                     <h3>
                         {props.title}

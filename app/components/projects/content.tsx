@@ -2,7 +2,6 @@ import React from 'react'
 import { Project } from '../../data/projects';
 import Link from 'next/link';
 import PlaceholderArticle from './articles/placeholderArticle';
-import { handleRouteLinkClick } from '../../helpers/handleRouteLinkClick';
 
 interface IProps {
     project: Project;

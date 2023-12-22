@@ -18,7 +18,7 @@ export const jobs: IJob[] = [
         title: 'Frontend Developer @ Awaze',
         description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
         skills: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        timeframe: 'Aug 2017 - Jan 2019',
+        timeframe: '2017 - 2019',
         url: 'https://www.awaze.com/'
     },
     {
