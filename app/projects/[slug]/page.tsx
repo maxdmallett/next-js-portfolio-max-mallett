@@ -17,8 +17,6 @@ const ProjectPage = (props: any) => {
         window.scrollTo({top: 0, left: 0, behavior: 'instant' });
     }, []);
 
-    console.log(project);
-
     return (
         <>
             <Navbar />

@@ -41,6 +41,9 @@ const HyperfoxBandArticle = () => {
                 <li>
                     jQuery
                 </li>
+                <li>
+                    Photoshop
+                </li>
             </ul>
 
             <figure className="block mb-12">

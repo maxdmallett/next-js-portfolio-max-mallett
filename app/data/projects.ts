@@ -1,5 +1,5 @@
-import HyperfoxBandArticle from "../components/projects/articles/hyperfoxbandarticle";
-
+import BlueChipSearchResultsArticle from "../components/projects/articles/bluechipSearchResultsArticle";
+import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
 export interface Project {
     slug: string;
     title: string;
@@ -35,9 +35,10 @@ export const projects: Project[] = [
     {
         slug: 'blue-chip-holidays-search-results-page',
         title: 'Blue Chip Holidays Search Results Page',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        cardImageUrl: '/Dashboard_1.png',
+        shortDescription: 'Led frontend development for Blue Chip Holidays search results page at Awaze. Utilised vanilla JS for AJAX, emphasising responsive design and robust coding.',
+        cardImageUrl: '/projects/bluechip/bluechip-sr-desktop.png',
         skills: ['Javascript', 'HTML', 'CSS', 'Spectre CSS'],
+        articleContent: BlueChipSearchResultsArticle,
     },
     {
         slug: 'nextjs-migration-deedeecare',
