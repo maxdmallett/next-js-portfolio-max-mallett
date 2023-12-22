@@ -48,3 +48,7 @@ body {
 .mobile-nav-menu.open {
     transform: translateX(0);
 }
+
+.project-article p {
+    margin-bottom: 2.5rem;
+}

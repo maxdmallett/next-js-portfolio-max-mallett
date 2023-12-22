@@ -31,7 +31,7 @@ const ProjectPage = (props: any) => {
                     />
                 </div>
 
-                <article className='bg-zinc-50 text-slate-900 w-full py-16'>
+                <article className='bg-zinc-50 text-slate-900 w-full py-16 pb-32'>
                     <Content 
                         project={project}
                     />
