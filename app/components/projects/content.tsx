@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Project } from '../../data/projects';
+import Link from 'next/link';
 
 interface IProps {
     project: Project;
@@ -35,6 +36,19 @@ const Content = (props: IProps) => {
             <p className=''>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra quis elit at facilisis. Vivamus imperdiet elementum dui, quis tristique mauris fermentum a. Suspendisse viverra neque et mi pellentesque varius. Proin eu rutrum augue. Aenean nec dui metus. Nam non mi aliquam mi fermentum venenatis ac non ligula. In porttitor nisi id urna vehicula, in pellentesque dui tempor.
             </p>
+
+            <Link
+                href="/"
+                scroll={true}
+                className="inline-block bg-teal-300 hover:bg-teal-400 text-white font-bold py-2 px-4 mt-10 rounded-md text-md transition duration-200 ease-in-out shadow"
+            >
+                <div className="flex flex-row align-middle">
+                    <svg className="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p className="ml-2">Back to home</p>
+                </div>
+            </Link>
 
         </div>
     )
