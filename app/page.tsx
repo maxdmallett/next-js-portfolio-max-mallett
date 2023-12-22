@@ -9,8 +9,9 @@ import Navbar from './components/nav/navbar'
 export default function Home() {
     return (
         <>
+            <div className='bg-dot-pattern'></div>
 
-            <Navbar />
+            <Navbar fixed={true} />
 
             <main className="flex min-h-screen flex-col items-center justify-between px-5 xl:px-0">
 

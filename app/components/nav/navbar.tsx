@@ -6,8 +6,13 @@ import MobileNavMenu from "./mobileNavMenu";
 import { navItems } from "./navData";
 import { handleRouteLinkClick } from "../../helpers/handleRouteLinkClick";
 
-const Navbar = () => {
+interface NavbarProps {
+    fixed?: boolean;
+}
 
+const Navbar = (props: NavbarProps) => {
+
+    const { fixed } = props;
     const [showBg, setShowBg] = useState<boolean>(false);
     const [mobileMenuVisible, setMobileMenuVisible] = useState<boolean>(false);
 
@@ -31,8 +36,9 @@ const Navbar = () => {
     return (
         
         <nav 
-            className={`fixed flex flex-wrap items-center justify-end p-4 lg:py-8 lg:px-10 w-full mx-auto z-10 transition-colors duration-300 ease-in-out
-            ${showBg ? 'lg:bg-sky-950/50 lg:backdrop-blur lg:p-4 lg:py-5 bg-gradient-to-b from-black/20' : ''}
+            className={`flex flex-wrap items-center justify-end p-4 lg:py-8 lg:px-10 w-full mx-auto z-10 transition-colors duration-300 ease-in-out
+            ${fixed ? 'fixed' : 'fixed lg:sticky'}
+            ${showBg ? 'lg:bg-slate-950/30 lg:backdrop-blur lg:p-4 lg:py-5 bg-gradient-to-b from-black/20' : ''}
             `}
         >
 

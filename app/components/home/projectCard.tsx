@@ -25,7 +25,7 @@ const ProjectCard = (props: Project) => {
             <div className='w-full lg:w-2/3'>
                 <Link 
                     href={`/projects/${props.slug}`}
-                    className='inline-block text-white text-xl mb-2 lg:mb-1 font-medium hover:text-teal-400 transition-colors ease-in-out'
+                    className='inline-block text-white text-xl mb-2 lg:mb-2 font-medium hover:text-teal-400 transition-colors ease-in-out'
                 >
                     <h3>
                         {props.title}

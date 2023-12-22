@@ -17,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
         <body
             className={inter.className + ' text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900"'}
-        >{children}</body>
+        >
+            {children}
+        </body>
     </html>
   )
 }
