@@ -1,5 +1,6 @@
 import BlueChipSearchResultsArticle from "../components/projects/articles/bluechipSearchResultsArticle";
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
+import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
     slug: string;
     title: string;
@@ -56,8 +57,9 @@ export const projects: Project[] = [
     {
         slug: 'vinnie-drop',
         title: 'Vinnie Drop Mobile Game & Website',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
+        shortDescription: "In 2017, I developed Vinnie Drop, a mobile game inspired by Net Yaroze's 'Down'. Simple controls, custom engine, along with a static website to complement the Google Play release.",
         skills: ['Adobe Animate', 'ActionScript 3', 'Javascript'],
+        articleContent: VinniedropArticle,
     },
     {
         slug: 'hyperfoxband',
