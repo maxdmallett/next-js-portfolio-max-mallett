@@ -8,14 +8,14 @@ const DeeDeeCareArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/bluechip/bluechip-sr-desktop.png"
-                    alt="Blue Chip Holidays search results page"
+                    src="/projects/deedeecare/deedeecare-home-desktop-1.png"
+                    alt="Dee Dee Care website home page"
                     width={800}
                     height={550}
                     className='rounded-md border border-zinc-200 shadow-sm'
                 />
                 <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                    Search results page
+                    Home page
                 </figcaption>
             </figure>
 
@@ -27,6 +27,19 @@ const DeeDeeCareArticle = () => {
                 In 2023 I decided to migrate the site to <InlineLink href="https://nextjs.org/">Next.js</InlineLink> to take advantage of the React ecosystem and Vercel’s deployment infrastructure. Creating reusable components for common UI elements, such as the navigation bar and footer has allowed for an efficient maintainable codebase. Code changes could now be committed to the Github repository and automatically published to live deployment.
             </p>
 
+            <figure className="block mb-12">
+                <Image
+                    src="/projects/deedeecare/deedeecare-home-mobile.png"
+                    alt="Dee Dee Care website home page (mobile)"
+                    width={250}
+                    height={542}
+                    className='rounded-md border border-zinc-200 shadow-sm mx-auto'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Home page (mobile)
+                </figcaption>
+            </figure>
+
             <p>
                 Next.js uses a file-based routing system that simplifies the organisation of pages. This approach makes it easier to structure your project. Additionally, Next.js automatically handles code splitting, ensuring that only the necessary JavaScript is loaded for each page, optimising load times and resource utilisation.
             </p>
@@ -34,6 +47,19 @@ const DeeDeeCareArticle = () => {
             <p>
                 During this process, I also updated the testimonial quotes to load via <InlineLink href="https://www.contentful.com/">Contentful</InlineLink> (a headless CMS). This allows the client to add, edit and delete testimonial quotes on the Contentful dashboard without the need for any development work.
             </p>
+
+            <figure className="block mb-12">
+                <Image
+                    src="/projects/deedeecare/deedeecare-testimonials-desktop-1.png"
+                    alt="Dee Dee Care website testimonials"
+                    width={800}
+                    height={550}
+                    className='rounded-md border border-zinc-200 shadow-sm'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Testimonials carousel
+                </figcaption>
+            </figure>
 
             <h6>Technologies Used:</h6>
 
@@ -58,37 +84,6 @@ const DeeDeeCareArticle = () => {
             <p>
                 Explore the project further on the <InlineLink href="https://github.com/maxdmallett/deedeecare-headless-cms">GitHub repository</InlineLink> or visit the live <InlineLink href="https://www.deedeecare.co.uk/">Dee Dee Care website</InlineLink>.
             </p>
-
-           {/* 
-
-            <div className='columns-2 gap-1 px-10'>
-                <figure className="block mb-12">
-                    <Image
-                        src="/projects/bluechip/bluechip-sr-mobile-1.png"
-                        alt="Blue Chip Holidays search results page (mobile)"
-                        width={250}
-                        height={542}
-                        className='rounded-md border border-zinc-200 shadow-sm mx-auto'
-                    />
-                    <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                        Search results page (mobile)
-                    </figcaption>
-                </figure>
-
-                <figure className="block mb-12">
-                    <Image
-                        src="/projects/bluechip/bluechip-sr-filters-mobile-1.png"
-                        alt="Blue Chip Holidays search results filters (mobile)"
-                        width={250}
-                        height={542}
-                        className='rounded-md border border-zinc-200 shadow-sm mx-auto'
-                    />
-                    <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                        Search result filters (mobile)
-                    </figcaption>
-                </figure>
-            </div>
-           */}
             
         </>
     )
