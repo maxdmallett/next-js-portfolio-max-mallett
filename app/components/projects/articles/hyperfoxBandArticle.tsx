@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import InlineLink from '../../inlineLink'
 
 const HyperfoxBandArticle = () => {
     return (
@@ -77,7 +78,7 @@ const HyperfoxBandArticle = () => {
             </p>
 
             <p>
-                Explore the project further on the <a href='https://github.com/maxdmallett/hyperfoxband.com' target='_blank' className='font-medium text-teal-500 hover:underline'>GitHub repository</a>.
+                Explore the project further on the <InlineLink href="https://github.com/maxdmallett/hyperfoxband.com">GitHub repository</InlineLink>.
             </p>
 
             <p>

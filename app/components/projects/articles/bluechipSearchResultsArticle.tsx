@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import InlineLink from '../../inlineLink'
 
 const BlueChipSearchResultsArticle = () => {
     return (
@@ -19,7 +20,7 @@ const BlueChipSearchResultsArticle = () => {
             </figure>
 
             <p>
-                During my time on the ecommerce team at <a href='https://www.awaze.com/' target='_blank' className='font-medium text-teal-500 hover:underline'>Awaze</a>, I primarily focused on improving the user experience for <a href='https://www.hoseasons.co.uk/' target='_blank' className='font-medium text-teal-500 hover:underline'>hoseasons.co.uk</a> and <a href='https://www.cottages.com/' target='_blank' className='font-medium text-teal-500 hover:underline'>cottages.com</a>. I played a key role in the integration of Blue Chip Holidays, specifically in building the frontend of the search results page for their new website.
+                During my time on the ecommerce team at <InlineLink href="https://www.awaze.com/">Awaze</InlineLink>, I primarily focused on improving the user experience for <InlineLink href="https://www.hoseasons.co.uk/">hoseasons.co.uk</InlineLink> and <InlineLink href="https://www.cottages.com/">cottages.com</InlineLink>. I played a key role in the integration of Blue Chip Holidays, specifically in building the frontend of the search results page for their new website.
             </p>
 
             <p>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import InlineLink from '../../inlineLink'
 
 const VinniedropArticle = () => {
     return (
@@ -19,7 +20,7 @@ const VinniedropArticle = () => {
             </figure>
 
             <p>
-                In 2017, I embarked on a personal project - developing the Vinnie Drop mobile game. My inspiration stemmed from the <a href='https://en.wikipedia.org/wiki/List_of_Net_Yaroze_games' target='_blank' className='font-medium text-teal-500 hover:underline'>Net Yaroze</a> game <a href='https://www.youtube.com/watch?v=tnNNviak-Sk&ab_channel=ACRetro' target='_blank' className='font-medium text-teal-500 hover:underline'>&apos;Down&apos;</a>,  a discovery from my childhood days playing a PlayStation 1 demo disk.
+                In 2017, I embarked on a personal project - developing the Vinnie Drop mobile game. My inspiration stemmed from the <InlineLink href="https://en.wikipedia.org/wiki/List_of_Net_Yaroze_games">Net Yaroze</InlineLink> game <InlineLink href="https://www.youtube.com/watch?v=tnNNviak-Sk&ab_channel=ACRetro">&apos;Down&apos;</InlineLink>,  a discovery from my childhood days playing a PlayStation 1 demo disk.
             </p>
 
             <p>
@@ -44,7 +45,7 @@ const VinniedropArticle = () => {
             </p>
 
             <p>
-                Coded <a href='https://en.wikipedia.org/wiki/ActionScript' target='_blank' className='font-medium text-teal-500 hover:underline'>ActionScript 3</a>, I bundled the game using the Adobe AIR SDK and released it on Google Play in the summer of 2017.
+                Coded <InlineLink href="https://en.wikipedia.org/wiki/ActionScript">ActionScript 3</InlineLink>, I bundled the game using the Adobe AIR SDK and released it on Google Play in the summer of 2017.
             </p>
 
             <figure className="block mb-12">
@@ -61,7 +62,7 @@ const VinniedropArticle = () => {
             </figure>
 
             <p>
-                To bolster the game&apos;s online presence, I established <a href='https://github.com/maxdmallett/vinniedrop.com' target='_blank' className='font-medium text-teal-500 hover:underline'>vinniedrop.com</a> - a one-page website employing HTML, CSS, and JS. Inspired by the <a href='https://www.firewatchgame.com/' target='_blank' className='font-medium text-teal-500 hover:underline'>Firewatch</a> website, it featured a background parallax effect on scroll. Additionally, I integrated simple <a href='https://github.com/maxdmallett/vinniedrop.com/blob/main/js/snowfall.js' target='_blank' className='font-medium text-teal-500 hover:underline'>snow particle effects</a> in JS to enhance the overall visual experience.
+                To bolster the game&apos;s online presence, I established <InlineLink href="https://github.com/maxdmallett/vinniedrop.com">vinniedrop.com</InlineLink> - a single-page website using HTML, CSS, and JS. Inspired by the <InlineLink href="https://www.firewatchgame.com/">Firewatch</InlineLink> website, it featured a background parallax effect on scroll. Additionally, I integrated simple <InlineLink href="https://github.com/maxdmallett/vinniedrop.com/blob/main/js/snowfall.js">snow particle effects</InlineLink> in JS to enhance the overall visual experience.
             </p>
 
             <figure className="block mb-12">

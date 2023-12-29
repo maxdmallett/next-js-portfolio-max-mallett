@@ -1,4 +1,5 @@
 import BlueChipSearchResultsArticle from "../components/projects/articles/bluechipSearchResultsArticle";
+import DeeDeeCareArticle from "../components/projects/articles/deedeecareArticle";
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
 import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
@@ -43,10 +44,11 @@ export const projects: Project[] = [
     },
     {
         slug: 'nextjs-migration-deedeecare',
-        title: 'NextJS migration of deedeecare.co.uk',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        thumbnailImageUrl: '/Dashboard_1.png',
-        skills: ['NextJS', 'TypeScript', 'SCSS', 'Photoshop'],
+        title: 'Next.js migration of deedeecare.co.uk',
+        shortDescription: "Migrated to Next.js in 2023 to improve developer and client experience. Utilised reusable components and Contentful for testimonial updates, streamlining maintenance and enabling client content control.",
+        skills: ['Next.js', 'TypeScript', 'SCSS', 'Photoshop'],
+        articleContent: DeeDeeCareArticle,
+        websiteUrl: 'https://www.deedeecare.co.uk/',
     },
     {
         slug: 'ambrasoft-flash-to-canvas-game-conversions',
