@@ -1,3 +1,4 @@
+import AmbrasoftArticle from "../components/projects/articles/ambrasoftArticle";
 import BlueChipSearchResultsArticle from "../components/projects/articles/bluechipSearchResultsArticle";
 import DeeDeeCareArticle from "../components/projects/articles/deedeecareArticle";
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
@@ -51,12 +52,6 @@ export const projects: Project[] = [
         websiteUrl: 'https://www.deedeecare.co.uk/',
     },
     {
-        slug: 'ambrasoft-flash-to-canvas-game-conversions',
-        title: 'Ambrasoft Flash to Canvas Game Conversions',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        skills: ['Javascript', 'Canvas', 'CreateJS', 'Illustrator'],
-    },
-    {
         slug: 'vinnie-drop',
         title: 'Vinnie Drop Mobile Game & Website',
         shortDescription: "In 2017, I developed Vinnie Drop, a mobile game inspired by Net Yaroze's 'Down'. Simple controls, custom engine, along with a static website to complement the Google Play release.",
@@ -69,5 +64,12 @@ export const projects: Project[] = [
         shortDescription: 'Designed and built a minimalist website for the band Hyperfox, showcasing music, videos, and news.',
         skills: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Photoshop'],
         articleContent: HyperfoxBandArticle,
-    }
+    },
+    {
+        slug: 'ambrasoft-flash-to-canvas-game-conversions',
+        title: 'Ambrasoft HTML Canvas Games',
+        shortDescription: 'Ambrasoft, owned by Dutch company Noordhoff, is an educational suite featuring maths and language games. In 2015, I contributed to their collection of HTML Canvas games using CreateJS.',
+        skills: ['Javascript', 'Canvas', 'CreateJS', 'Illustrator'],
+        articleContent: AmbrasoftArticle
+    },
 ];

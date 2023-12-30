@@ -6,7 +6,7 @@ const OtherProjects = () => {
     return (
         <section className='py-12 sm:py-24'>
             
-            <SectionHeading title='Other Projects' />
+            <SectionHeading title='More Projects' />
 
             <ul className='grid md:grid-cols-2 gap-y-4 md:gap-8'>
                 {
