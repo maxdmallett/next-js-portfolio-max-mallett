@@ -29,7 +29,7 @@ const Hero = (props: IProps) => {
                             target="_blank"
                             className="inline-block flex-grow-0 rounded-md bg-transparent border border-teal-300 px-5 py-3 text-md font-normal text-teal-300"
                         >
-                            Website
+                            View live
                         </a>
                     </div>
                 )

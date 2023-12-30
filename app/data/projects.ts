@@ -2,6 +2,7 @@ import AmbrasoftArticle from "../components/projects/articles/ambrasoftArticle";
 import BlueChipSearchResultsArticle from "../components/projects/articles/bluechipSearchResultsArticle";
 import DeeDeeCareArticle from "../components/projects/articles/deedeecareArticle";
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
+import IR35ShieldBlogArticle from "../components/projects/articles/ir35ShieldBlogArticle";
 import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
     slug: string;
@@ -20,13 +21,16 @@ export const projects: Project[] = [
         shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
         thumbnailImageUrl: '/projects/project-thumbnail-placeholder.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
+        websiteUrl: 'https://www.ir35shield.co.uk/',
     },
     {
         slug: 'ir35-shield-blog',
         title: 'IR35 Shield Blog',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        thumbnailImageUrl: '/projects/project-thumbnail-placeholder.png',
+        shortDescription: 'Design and frontend build of the IR35 Shield blog. Adobe XD used for the design phase, HTML, SCSS, and Vanilla JS used for the build phase.',
+        thumbnailImageUrl: '/projects/ir35shieldblog/shield-blog-project-thumbnail.png',
         skills: ['HTML', 'SCSS', 'Javascript', 'Bootstrap', 'XD'],
+        articleContent: IR35ShieldBlogArticle,
+        websiteUrl: 'https://www.ir35shield.co.uk/Articles/',
     },
     {
         slug: 'maxmallett-portfolio-website',
@@ -34,6 +38,7 @@ export const projects: Project[] = [
         shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
         thumbnailImageUrl: '/projects/project-thumbnail-placeholder.png',
         skills: ['NextJS', 'Typescript', 'Tailwind', 'Figma', 'Vercel'],
+        websiteUrl: 'https://www.maxmallett.co.uk/',
     },
     {
         slug: 'blue-chip-holidays-search-results-page',
