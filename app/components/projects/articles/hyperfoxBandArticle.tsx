@@ -8,7 +8,7 @@ const HyperfoxBandArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/hyperfox/hyperfox-homepage-desktop.png"
+                    src="/images/hyperfox/hyperfox-homepage-desktop.png"
                     alt="HyperFox website homepage"
                     width={800}
                     height={550}
@@ -49,7 +49,7 @@ const HyperfoxBandArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/hyperfox/hyperfox-gallery-desktop.png"
+                    src="/images/hyperfox/hyperfox-gallery-desktop.png"
                     alt="HyperFox website gallery"
                     width={800}
                     height={550}
@@ -62,7 +62,7 @@ const HyperfoxBandArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/hyperfox/hyperfox-homepage-mobile.png"
+                    src="/images/hyperfox/hyperfox-homepage-mobile.png"
                     alt="HyperFox website homepage (mobile)"
                     width={250}
                     height={542}
@@ -87,7 +87,7 @@ const HyperfoxBandArticle = () => {
 
             <figure className="block">
                 <Image
-                    src="/projects/hyperfox/hyperfox-social-media-banner.png"
+                    src="/images/hyperfox/hyperfox-social-media-banner.png"
                     alt="HyperFox social media banner"
                     width={800}
                     height={351}

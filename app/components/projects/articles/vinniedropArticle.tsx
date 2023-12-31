@@ -8,7 +8,7 @@ const VinniedropArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/vinniedrop/vinniedrop-sg1.png"
+                    src="/images/vinniedrop/vinniedrop-sg1.png"
                     alt="Vinnie Drop game screen grab"
                     width={798}
                     height={478}
@@ -29,7 +29,7 @@ const VinniedropArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/vinniedrop/vinniedrop-sg2.png"
+                    src="/images/vinniedrop/vinniedrop-sg2.png"
                     alt="Vinnie Drop game screen grab"
                     width={798}
                     height={478}
@@ -50,7 +50,7 @@ const VinniedropArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/vinniedrop/vinniedrop-sg3.png"
+                    src="/images/vinniedrop/vinniedrop-sg3.png"
                     alt="Vinnie Drop level select"
                     width={798}
                     height={478}
@@ -67,7 +67,7 @@ const VinniedropArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/vinniedrop/vinniedrop-website-sg.png"
+                    src="/images/vinniedrop/vinniedrop-website-sg.png"
                     alt="Vinnie Drop website home page"
                     width={800}
                     height={420}

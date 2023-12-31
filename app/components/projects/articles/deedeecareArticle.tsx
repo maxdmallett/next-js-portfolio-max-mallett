@@ -8,7 +8,7 @@ const DeeDeeCareArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/deedeecare/deedeecare-home-desktop-1.png"
+                    src="/images/deedeecare/deedeecare-home-desktop-1.png"
                     alt="Dee Dee Care website home page"
                     width={800}
                     height={550}
@@ -29,7 +29,7 @@ const DeeDeeCareArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/deedeecare/deedeecare-home-mobile.png"
+                    src="/images/deedeecare/deedeecare-home-mobile.png"
                     alt="Dee Dee Care website home page (mobile)"
                     width={250}
                     height={542}
@@ -50,7 +50,7 @@ const DeeDeeCareArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/deedeecare/deedeecare-testimonials-desktop-1.png"
+                    src="/images/deedeecare/deedeecare-testimonials-desktop-1.png"
                     alt="Dee Dee Care website testimonials"
                     width={800}
                     height={550}

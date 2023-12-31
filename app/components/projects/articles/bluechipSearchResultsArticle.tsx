@@ -8,7 +8,7 @@ const BlueChipSearchResultsArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/bluechip/bluechip-sr-desktop.png"
+                    src="/images/bluechip/bluechip-sr-desktop.png"
                     alt="Blue Chip Holidays search results page"
                     width={800}
                     height={550}
@@ -30,7 +30,7 @@ const BlueChipSearchResultsArticle = () => {
             <div className='columns-2 gap-1 px-10'>
                 <figure className="block mb-12">
                     <Image
-                        src="/projects/bluechip/bluechip-sr-mobile-1.png"
+                        src="/images/bluechip/bluechip-sr-mobile-1.png"
                         alt="Blue Chip Holidays search results page (mobile)"
                         width={250}
                         height={542}
@@ -43,7 +43,7 @@ const BlueChipSearchResultsArticle = () => {
 
                 <figure className="block mb-12">
                     <Image
-                        src="/projects/bluechip/bluechip-sr-filters-mobile-1.png"
+                        src="/images/bluechip/bluechip-sr-filters-mobile-1.png"
                         alt="Blue Chip Holidays search results filters (mobile)"
                         width={250}
                         height={542}

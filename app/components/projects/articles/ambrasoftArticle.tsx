@@ -10,7 +10,7 @@ const AmbrasoftArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ambrasoft/ambrasoft-feature-image.png"
+                    src="/images/ambrasoft/ambrasoft-feature-image.png"
                     alt="Gorillarama intro screen"
                     width={800}
                     height={419}
@@ -39,7 +39,7 @@ const AmbrasoftArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ambrasoft/ambrasoft-gorillarama-in-game.png"
+                    src="/images/ambrasoft/ambrasoft-gorillarama-in-game.png"
                     alt="Gorillarama in-game screen"
                     width={800}
                     height={495}
@@ -69,7 +69,7 @@ const AmbrasoftArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ambrasoft/ambrasoft-brickdonk-in-game.png"
+                    src="/images/ambrasoft/ambrasoft-brickdonk-in-game.png"
                     alt="Brick Donk in-game screen"
                     width={800}
                     height={495}
@@ -95,7 +95,7 @@ const AmbrasoftArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ambrasoft/ambrasoft-wordsearch-in-game.png"
+                    src="/images/ambrasoft/ambrasoft-wordsearch-in-game.png"
                     alt="Word Search in-game screen"
                     width={800}
                     height={495}

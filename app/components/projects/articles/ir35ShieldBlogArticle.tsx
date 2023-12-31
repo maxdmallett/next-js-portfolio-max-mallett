@@ -8,7 +8,7 @@ const IR35ShieldBlogArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ir35shieldblog/shield-blog-list-desktop.png"
+                    src="/images/ir35shieldblog/shield-blog-list-desktop.png"
                     alt="IR35 Shield Blog list page"
                     width={800}
                     height={450}
@@ -33,7 +33,7 @@ const IR35ShieldBlogArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ir35shieldblog/shield-blog-xd.png"
+                    src="/images/ir35shieldblog/shield-blog-xd.png"
                     alt="IR35 Shield Blog XD design"
                     width={800}
                     height={438}
@@ -59,7 +59,7 @@ const IR35ShieldBlogArticle = () => {
             <div className='columns-2 gap-1 px-10'>
                 <figure className="block mb-12">
                     <Image
-                        src="/projects/ir35shieldblog/shield-blog-list-mobile.png"
+                        src="/images/ir35shieldblog/shield-blog-list-mobile.png"
                         alt="IR35 Shield Blog list page (mobile)"
                         width={250}
                         height={541}
@@ -72,7 +72,7 @@ const IR35ShieldBlogArticle = () => {
 
                 <figure className="block mb-12">
                     <Image
-                        src="/projects/ir35shieldblog/shield-blog-mobile.png"
+                        src="/images/ir35shieldblog/shield-blog-mobile.png"
                         alt="IR35 Shield Blog page (mobile)"
                         width={250}
                         height={541}

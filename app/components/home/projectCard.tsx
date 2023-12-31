@@ -13,7 +13,7 @@ const ProjectCard = (props: Project) => {
                     className='block rounded-md overflow-hidden border-2 border-slate-100/50'
                 >
                     <Image
-                        src={props.thumbnailImageUrl ? props.thumbnailImageUrl : '/projects/placeholder.png'}
+                        src={props.thumbnailImageUrl ? props.thumbnailImageUrl : '/images/project-thumbnail-placeholder.png'}
                         alt={props.title}
                         width={400}
                         height={300}

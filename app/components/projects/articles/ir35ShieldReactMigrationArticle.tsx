@@ -8,14 +8,14 @@ const IR35ShieldReactMigrationArticle = () => {
 
             <figure className="block mb-12">
                 <Image
-                    src="/projects/ir35shieldblog/shield-blog-list-desktop.png"
-                    alt="IR35 Shield Blog list page"
+                    src="/images/ir35shieldreact/shield-react-dashboard.png"
+                    alt="IR35 Shield Dashboard"
                     width={800}
                     height={450}
                     className='rounded-md border border-zinc-200 shadow-sm'
                 />
                 <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                    IR35 Shield Blog list page
+                    IR35 Shield Dashboard
                 </figcaption>
             </figure>
 
