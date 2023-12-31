@@ -115,6 +115,19 @@ const IR35ShieldReactMigrationArticle = () => {
                
             </ul>
 
+            <figure className="block mb-12">
+                <Image
+                    src="/images/ir35shieldreact/shield-react-redux-store-1.png"
+                    alt="Setting up the Redux store"
+                    width={800}
+                    height={442}
+                    className='rounded-md border border-zinc-200 shadow-sm'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Setting up the Redux store
+                </figcaption>
+            </figure>
+
             <h4 className='text-lg font-bold mb-5'>
                 Unit tests
             </h4>
@@ -122,6 +135,19 @@ const IR35ShieldReactMigrationArticle = () => {
             <p>
                 I used <InlineLink href="https://jestjs.io/">Jest</InlineLink> and <InlineLink href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</InlineLink> to create unit tests for all of the new Typescript components. Components that were dependent on global state were tested inside a redux provider, which allows custom test cases for every state. Over 400 unit tests were written in total.
             </p>
+
+            <figure className="block mb-12">
+                <Image
+                    src="/images/ir35shieldreact/shield-react-unit-tests.png"
+                    alt="Jest unit tests"
+                    width={800}
+                    height={772}
+                    className='rounded-md border border-zinc-200 shadow-sm'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Jest unit tests
+                </figcaption>
+            </figure>
 
             <h4 className='text-lg font-bold mb-5'>
                 Handling Forms with React Hook Form
@@ -135,6 +161,19 @@ const IR35ShieldReactMigrationArticle = () => {
                 I decided to use <InlineLink href="https://react-hook-form.com/">React Hook Form</InlineLink> in this app. Registering each input to a property of the model feels robust; the required property options for validation offer great flexibility; and the data-driven nature of the tool keeps forms with multiple inputs easy to understand. The handle submit method only fires when validation passes, so you have confidence that posts to the API are only happening when they should.
             </p>
 
+            <figure className="block mb-12">
+                <Image
+                    src="/images/ir35shieldreact/shield-react-form-1.png"
+                    alt="Form built with React Hook Form"
+                    width={800}
+                    height={340}
+                    className='rounded-md border border-zinc-200 shadow-sm'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Form built with React Hook Form
+                </figcaption>
+            </figure>
+
             <h4 className='text-lg font-bold mb-5'>
                 Live updates with SignalR
             </h4>
@@ -142,6 +181,19 @@ const IR35ShieldReactMigrationArticle = () => {
             <p>
                 To handle live display updates when consumables are spent, we used <InlineLink href="https://dotnet.microsoft.com/en-us/apps/aspnet/signalr">SignalR</InlineLink> websockets via a Typescript interface. For example, when a credit is spent, the credits hub dispatches a method to update the consumables state in Redux. Every component that makes use of the credits property in Redux is then automatically re-rendered with the new value.
             </p>
+
+            <figure className="block mb-12">
+                <Image
+                    src="/images/ir35shieldreact/shield-react-signalr-dispatch-1.png"
+                    alt="Credit updates dispatched via SignalR"
+                    width={800}
+                    height={97}
+                    className='rounded-md border border-zinc-200 shadow-sm'
+                />
+                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
+                    Credit updates dispatched via SignalR
+                </figcaption>
+            </figure>
 
             <h4 className='text-lg font-bold mb-5'>
                 Outcome
