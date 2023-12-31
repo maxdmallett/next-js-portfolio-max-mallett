@@ -9,7 +9,7 @@ export interface IJob {
 export const jobs: IJob[] = [
     {
         title: 'Frontend Developer @ IR35 Shield',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
+        description: 'Building high-quality, responsive user interfaces on a range of SaaS products. Collaborating with developers, designers and products managers in a small, tech-focused team.',
         skills: ['React', 'Typescript', 'SCSS', 'Redux', 'Jest', 'RTL'],
         timeframe: '2019 - present',
         url: 'https://www.ir35shield.co.uk/'

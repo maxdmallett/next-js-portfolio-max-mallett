@@ -24,11 +24,11 @@ const IR35ShieldReactMigrationArticle = () => {
             </p>
 
             <p>
-                As the IR35 Shield dashboard has grown more complex throughout development, it has become increasingly difficult to manage the scale of the frontend code using Vanilla Javascript alone. Migrating to React would give us the ability to split UI elements into small, manageable components, keeping the code more manageable as the application scales up in size.
+                As the IR35 Shield dashboard has grown more complex throughout development, it has become increasingly difficult to manage the scale of the frontend code using Vanilla Javascript alone. Migrating to React would give us the ability to split UI elements into small, self-contained components, keeping the code more manageable as the application scales up in size.
             </p>
 
             <p>
-                Migrating to React would allow us to create a richer UI that responds to changes in state or data updates without requiring page reloads, providing a more seamless experience for the user. I was tasked with leading the frontend part of this project and given the responsibility of choosing which tools and packages I would use, providing reasons why I had chosen to use them.
+                Migrating to React would allow us to create a richer UI that responds to changes in state or data updates without requiring page reloads, providing a more seamless experience for the user. I was tasked with leading the frontend part of this project and given the responsibility of choosing which tools and packages to use; I was also required to substantiate my decision making with valid reasoning.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -36,7 +36,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </h4>
 
             <p>
-                The team decided that we would convert a single page as the first step, including the global features that exist on all dashboard pages: the navbar, sidebar, user menus, and global modals. This meant that a lot of frontend components would need conversion before our first page went live. The UI design was kept the same to reduce the number of variables on this project.
+                The team decided that we would convert a single page as the first step, including the global features that exist on all dashboard pages: the navbar, sidebar, user menus, and global modals. Subsequently, multiple frontend components required conversion before our first page went live. The UI design was kept the same to reduce the number of variables on this project.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -89,7 +89,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </h4>
 
             <p>
-                At the start of the migration processes, I decided to use React Context to store the global state. As the migration process developed, I soon realised Redux would be more appropriate for handling a larger amount of state, containing complex update logic, and having the ability to dispatch state changes from any component. I swapped out Context for <InlineLink href="https://redux-toolkit.js.org/">Redux Toolkit</InlineLink>, resulting in a much more robust state management solution.
+                At the start of the migration process, I decided to use React Context to store the global state. As the migration process developed, I soon realised that Redux would be more appropriate for the following purposes - handling a large amount of state, containing complex update logic, and having the ability to dispatch state changes from any component. I swapped out Context for <InlineLink href="https://redux-toolkit.js.org/">Redux Toolkit</InlineLink>, resulting in a much more robust state management solution.
             </p>
 
             <h6 className='mb-2'>
@@ -158,7 +158,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </p>
 
             <p>
-                I decided to use <InlineLink href="https://react-hook-form.com/">React Hook Form</InlineLink> in this app. Registering each input to a property of the model feels robust; the required property options for validation offer great flexibility; and the data-driven nature of the tool keeps forms with multiple inputs easy to understand. The handle submit method only fires when validation passes, so you have confidence that posts to the API are only happening when they should.
+                I decided to use <InlineLink href="https://react-hook-form.com/">React Hook Form</InlineLink> in this app for the following reasons: registering each input to a property of the model feels robust, the ‘required’ property options for validation offer great flexibility, and the documentation is easy to understand. The handle submit method only fires when validation passes, so you have confidence that posts to the API are only happening when they should.
             </p>
 
             <figure className="block mb-12">
