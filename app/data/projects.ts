@@ -22,8 +22,7 @@ export const projects: Project[] = [
         shortDescription: 'Frontend project leader for converting a SaaS product dashboard from vanilla JS to React with Typescript. Integrated several NodeJS packages and fully unit tested using Jest.',
         thumbnailImageUrl: '/images/ir35shieldreact/shield-react-project-thumbnail.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
-        articleContent: IR35ShieldReactMigrationArticle,
-        websiteUrl: 'https://www.ir35shield.co.uk/',
+        articleContent: IR35ShieldReactMigrationArticle
     },
     {
         slug: 'ir35-shield-blog',
