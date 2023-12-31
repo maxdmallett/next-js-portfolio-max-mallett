@@ -3,6 +3,7 @@ import BlueChipSearchResultsArticle from "../components/projects/articles/bluech
 import DeeDeeCareArticle from "../components/projects/articles/deedeecareArticle";
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
 import IR35ShieldBlogArticle from "../components/projects/articles/ir35ShieldBlogArticle";
+import IR35ShieldReactMigrationArticle from "../components/projects/articles/ir35ShieldReactMigrationArticle";
 import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
     slug: string;
@@ -18,9 +19,10 @@ export const projects: Project[] = [
     {
         slug: 'react-migration-of-ir35-shield-dashboard',
         title: 'React migration of IR35 Shield Dashboard',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
+        shortDescription: 'Led the frontend side of a project to convert a SaaS product dashboard from vanilla JS to React with Typescript. Integrated several NodeJS packages and fully unit tested using Jest.',
         thumbnailImageUrl: '/projects/project-thumbnail-placeholder.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
+        articleContent: IR35ShieldReactMigrationArticle,
         websiteUrl: 'https://www.ir35shield.co.uk/',
     },
     {
