@@ -10,7 +10,7 @@ const ContactIconLink = (props: ContactIconLinkProps) => {
     const { href, label, icon } = props
     return (
         <a 
-            className="block hover:text-slate-200 p-10 bg-black/20 rounded-xl mx-3"
+            className="block hover:text-slate-200 p-5 sm:p-10 bg-black/20 rounded-xl mx-3"
             href={`${href}`}
             target="_blank" 
             rel="noreferrer noopener"
