@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import Hero from '../../components/projects/hero'
 import Navbar from '../../components/nav/navbar'
 import { Project, projects } from '../../data/projects'
@@ -12,10 +12,6 @@ const ProjectPage = (props: any) => {
     const project: Project = projects.filter(({slug}) => {
         return slug === props.params.slug;
     })[0];
-
-    useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'instant' });
-    }, []);
 
     return (
         <>
