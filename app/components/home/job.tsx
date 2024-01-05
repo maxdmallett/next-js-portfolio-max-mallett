@@ -38,7 +38,7 @@ const Job = (props: IJobsProperties) => {
                         {props.description}
                     </p>
                     <div className={`${alignment === 'left' ? 'md:ms-auto' : ''} sm:mb-20 group-last:sm:mb-1`}>
-                        <PillList pills={props.skills}/>
+                        <PillList pills={props.skills} alignment={alignment} />
                     </div>
                 </div>
 
