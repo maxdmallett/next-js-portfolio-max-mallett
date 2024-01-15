@@ -18,7 +18,7 @@ const Content = (props: IProps) => {
 
             <Link
                 href="/#projects"
-                className="inline-block bg-teal-500 hover:bg-teal-300 text-white font-bold py-2 px-4 mt-10 rounded-md text-md transition duration-200 ease-in-out shadow"
+                className="inline-block bg-primary-500 hover:bg-primary-300 text-white font-bold py-2 px-4 mt-10 rounded-md text-md transition duration-200 ease-in-out shadow"
             >
                 <div className="flex flex-row align-middle">
                     <svg className="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

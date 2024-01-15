@@ -27,7 +27,7 @@ const Hero = (props: IProps) => {
                         <a
                             href={websiteUrl}
                             target="_blank"
-                            className="inline-block flex-grow-0 rounded-md bg-transparent border border-teal-300 px-5 py-3 text-md font-normal text-teal-300"
+                            className="inline-block flex-grow-0 rounded-md bg-transparent border border-primary-300 px-5 py-3 text-md font-normal text-primary-300"
                         >
                             View live
                         </a>

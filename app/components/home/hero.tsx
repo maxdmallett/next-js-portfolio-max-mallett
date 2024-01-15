@@ -15,7 +15,7 @@ const Hero = () => {
             </h2>
 
             <p className='mb-12 text-lg pb-3 max-w-xl mx-auto'>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam <a href='/' className='text-teal-300 font-normal'>IR35 Shield</a>.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam <a href='/' className='text-primary-500 hover:underline whitespace-nowrap'>IR35 Shield</a>.
             </p>
 
             <div>
@@ -23,7 +23,7 @@ const Hero = () => {
                     href="#experience"
                     data-sectionid='experience'
                     onClick={handleRouteLinkClick}
-                    className="inline-block flex-grow-0 rounded-md bg-transparent border border-teal-300 px-5 py-3 text-md font-normal text-teal-300 hover:bg-teal-500 hover:border-transparent hover:text-white transition duration-200 ease-in-out"
+                    className="inline-block flex-grow-0 rounded-md bg-transparent border border-primary-500 px-5 py-3 text-md font-normal text-primary-500 hover:bg-primary-700 hover:border-transparent hover:text-white transition duration-200 ease-in-out"
                 >
                     View my experience
                 </Link>

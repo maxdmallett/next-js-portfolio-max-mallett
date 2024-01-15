@@ -60,14 +60,14 @@ const Navbar = (props: NavbarProps) => {
             </div>
 
             <div className="hidden mr-3 space-x-4 lg:flex">
-                <Link href="/" className="px-6 py-1.5 text-teal-300 bg-transparent border border-teal-300 rounded-md md:ml-5 hover:bg-teal-500 hover:border-transparent hover:text-white transition duration-200 ease-in-out">
+                <Link href="/" className="px-6 py-1.5 text-primary-500 bg-transparent border border-primary-500 rounded-md md:ml-5 hover:bg-primary-700 hover:border-transparent hover:text-white transition duration-200 ease-in-out">
                     CV
                 </Link>
             </div>
 
             <button 
                 className={`lg:hidden navbar-burger flex items-center text-white p-3 rounded-full transition-colors duration-300 ease-in-out
-                    ${showBg ? 'bg-teal-500 shadow-md' : ''}
+                    ${showBg ? 'bg-primary-500 shadow-md' : ''}
                 `}
                 onClick={hamburgerButtonClicked}
             >

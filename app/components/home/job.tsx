@@ -23,7 +23,7 @@ const Job = (props: IJobsProperties) => {
                     <Link 
                         href={props.url}
                         target='_blank'
-                        className='text-white text-xl mb-1 sm:mb-3 hover:text-teal-400 transition-colors ease-in-out'
+                        className='text-white text-xl mb-1 sm:mb-3 hover:text-primary-400 transition-colors ease-in-out'
                     >
                         <h6 className=''>
                             {props.title}
@@ -43,7 +43,7 @@ const Job = (props: IJobsProperties) => {
                 </div>
 
                 <div className="hidden md:flex col-span-1 flex-col items-center pt-1.5">
-                    <div className="w-4 h-4 flex-shrink-0 bg-teal-300 rounded-full mb-4"></div>
+                    <div className="w-4 h-4 flex-shrink-0 bg-primary-300 rounded-full mb-4"></div>
                     <div className="w-0.5 h-full bg-white/20 flex-grow-1"></div>
                 </div>
                 

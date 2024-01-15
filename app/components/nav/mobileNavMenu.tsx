@@ -25,7 +25,7 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
 
     return (
         <div className={`
-            mobile-nav-menu fixed top-0 left-0 w-full h-screen bg-cyan-950 z-50 px-5
+            mobile-nav-menu fixed top-0 left-0 w-full h-screen bg-primary-950 z-50 px-5
             ${visible ? 'open' : ''}
         `}>
             <button onClick={closeMenu} type="button" className="top-4 right-4 absolute p-2 inline-flex items-center justify-center text-white focus:outline-none focus:bg-transparent">
@@ -48,7 +48,7 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
                     </li>
                 ))}
                 <li>
-                    <Link href="/" className="block px-4 py-2 mb-3 text-lg font-normal text-teal-300 uppercase">
+                    <Link href="/" className="block px-4 py-2 mb-3 text-lg font-normal text-primary-300 uppercase">
                         CV
                     </Link>
                 </li>

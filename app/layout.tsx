@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body
-            className={inter.className + ' text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900"'}
+            className={inter.className + ' text-slate-400 antialiased selection:bg-primary-300 selection:text-primary-900"'}
         >
             {children}
         </body>

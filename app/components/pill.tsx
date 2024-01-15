@@ -9,7 +9,7 @@ const Pill = (props: IProps) => {
 
     return (
         <li 
-            className={`bg-teal-800 text-teal-300 rounded-full p-1 px-2.5 text-center text-sm select-none whitespace-nowrap last:mr-0 ${alignment === 'left' ? 'mr-1.5 md:mr-0 md:ml-1.5' : 'mr-1.5'}`}
+            className={`bg-primary-800 text-primary-300 rounded-full p-1 px-2.5 text-center text-sm select-none whitespace-nowrap last:mr-0 ${alignment === 'left' ? 'mr-1.5 md:mr-0 md:ml-1.5' : 'mr-1.5'}`}
         > 
             {props.text}
         </li>
