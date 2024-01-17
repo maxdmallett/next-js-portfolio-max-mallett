@@ -37,7 +37,7 @@ export const projects: Project[] = [
         slug: 'maxmallett-portfolio-website',
         title: 'maxmallett.co.uk',
         shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
-        thumbnailImageUrl: '/images/project-thumbnail-placeholder.png',
+        thumbnailImageUrl: '/images/portfolio/portfolio-project-thumbnail-1.png',
         skills: ['NextJS', 'Typescript', 'Tailwind', 'Figma', 'Vercel'],
         websiteUrl: 'https://www.maxmallett.co.uk/',
     },
