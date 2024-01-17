@@ -17,7 +17,7 @@ const ProjectCard = (props: Project) => {
                         alt={props.title}
                         width={400}
                         height={300}
-                        className=''
+                        className='hover:scale-110 transition-transform ease-in-out duration-300'
                     />
                 </Link>
             </div>
