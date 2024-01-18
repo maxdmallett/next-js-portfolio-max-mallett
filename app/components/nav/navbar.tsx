@@ -60,7 +60,10 @@ const Navbar = (props: NavbarProps) => {
             </div>
 
             <div className="hidden mr-3 space-x-4 lg:flex">
-                <Link href="/" className="px-6 py-1.5 text-primary-500 bg-transparent border border-primary-500 rounded-md md:ml-5 hover:bg-primary-700 hover:border-transparent hover:text-white transition duration-200 ease-in-out">
+                <Link 
+                    href="/" 
+                    className="px-6 py-1.5 text-primary-500 bg-transparent border border-primary-500 rounded-md md:ml-5 hover:bg-primary-700 hover:border-transparent hover:text-white transition duration-200 ease-in-out"
+                >
                     CV
                 </Link>
             </div>

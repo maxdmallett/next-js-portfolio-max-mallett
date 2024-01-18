@@ -24,7 +24,7 @@ const BlueChipSearchResultsArticle = () => {
             </p>
 
             <p>
-                My tasks involved translating provided UI designs for desktop, tablet, and mobile into a functional and cohesive webpage. Given the absence of a JavaScript framework, I utilised vanilla JS for AJAX updates, emphasising the need for robust code to prevent potential errors on a high-revenue site.
+                My tasks involved translating provided UI designs for desktop, tablet, and mobile into a functional and cohesive webpage. Given the absence of a JavaScript framework, I utilised Vanilla JS for AJAX updates, emphasising the need for robust code to prevent potential errors on a high-revenue site.
             </p>
 
             <div className='columns-2 gap-1 px-10'>

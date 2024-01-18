@@ -20,7 +20,7 @@ export const projects: Project[] = [
     {
         slug: 'react-migration-of-ir35-shield-dashboard',
         title: 'React migration of IR35 Shield Dashboard',
-        shortDescription: 'Frontend project leader for converting a SaaS product dashboard from vanilla JS to React with Typescript. Integrated several NodeJS packages and fully unit tested using Jest.',
+        shortDescription: 'Frontend project leader for converting a SaaS product dashboard from Vanilla JS to React with Typescript. Integrated several NodeJS packages and fully unit tested using Jest.',
         thumbnailImageUrl: '/images/ir35shieldreact/shield-react-project-thumbnail.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
         articleContent: IR35ShieldReactMigrationArticle
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     {
         slug: 'blue-chip-holidays-search-results-page',
         title: 'Blue Chip Holidays Search Results Page',
-        shortDescription: 'Led frontend development for Blue Chip Holidays search results page at Awaze. Utilised vanilla JS for AJAX, emphasising responsive design and robust coding.',
+        shortDescription: 'Led frontend development for Blue Chip Holidays search results page at Awaze. Utilised Vanilla JS for AJAX, emphasising responsive design and robust coding.',
         thumbnailImageUrl: '/images/bluechip/bluechip-project-thumbnail.png',
         skills: ['Javascript', 'HTML', 'CSS', 'Spectre CSS'],
         articleContent: BlueChipSearchResultsArticle,
