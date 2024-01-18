@@ -4,6 +4,7 @@ import DeeDeeCareArticle from "../components/projects/articles/deedeecareArticle
 import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArticle";
 import IR35ShieldBlogArticle from "../components/projects/articles/ir35ShieldBlogArticle";
 import IR35ShieldReactMigrationArticle from "../components/projects/articles/ir35ShieldReactMigrationArticle";
+import PortfolioArticle from "../components/projects/articles/portfolioArticle";
 import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
     slug: string;
@@ -11,7 +12,7 @@ export interface Project {
     shortDescription: string;
     thumbnailImageUrl?: string;
     skills: string[];
-    articleContent?: () => React.JSX.Element;
+    articleContent: () => React.JSX.Element;
     websiteUrl?: string;
 }
 
@@ -36,10 +37,10 @@ export const projects: Project[] = [
     {
         slug: 'maxmallett-portfolio-website',
         title: 'maxmallett.co.uk',
-        shortDescription: 'Morbi dui nisi, fermentum a arcu ac, luctus vehicula ex. Donec tincidunt ultrices est, eu vestibulum ex convallis sit amet. Cras efficitur diam orci, tristique gravida dui feugiat nec.',
+        shortDescription: 'My portfolio website, created to showcase some of the professional and personal projects I have completed. Built using NextJS, Typescript, Tailwind, and deployed on Vercel.',
         thumbnailImageUrl: '/images/portfolio/portfolio-project-thumbnail-1.png',
         skills: ['NextJS', 'Typescript', 'Tailwind', 'Figma', 'Vercel'],
-        websiteUrl: 'https://www.maxmallett.co.uk/',
+        articleContent: PortfolioArticle
     },
     {
         slug: 'blue-chip-holidays-search-results-page',
