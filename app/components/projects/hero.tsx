@@ -11,19 +11,19 @@ const Hero = (props: IProps) => {
     const {title, shortDescription, websiteUrl} = props.project;
 
     return (
-        <header className='text-center pt-24 pb-16 sm:pt-32 sm:pb-32 flex flex-col justify-center px-5 sm:px-0'>
+        <header className='text-center pt-24 pb-16 sm:pt-32 sm:pb-36 flex flex-col justify-center px-5 sm:px-0'>
            
             <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-200 mb-5">
                 {title}
             </h1>
 
-            <p className='text-md sm:text-lg pb-3 max-w-2xl mx-auto mb-5'>
+            <p className='text-md sm:text-lg max-w-2xl mx-auto'>
                 {shortDescription}
             </p>
 
             {
                 websiteUrl && (
-                    <div>
+                    <div className="mt-10">
                         <a
                             href={websiteUrl}
                             target="_blank"
