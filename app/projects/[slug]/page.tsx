@@ -15,6 +15,12 @@ const ProjectPage = (props: any) => {
 
     return (
         <>
+
+            {/*
+                Empty div required to fix NextJS bug where the page does not scroll to top when navigated to on mobile
+                This seems to be caused when the 'fixed' class is active on the navbar
+            */}
+            <div></div>
             <Navbar />
 
             <main className="flex min-h-screen flex-col items-center justify-between">
