@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { navItems } from './navData';
-import { scrollToElement } from '../../helpers/scrollTo';
 import { handleRouteLinkClick } from '../../helpers/handleRouteLinkClick';
 import MobileMenuIconLink from '../mobileMenuIconLink';
 import {
