@@ -14,9 +14,6 @@ const OtherProjectCard = (props: Project) => {
                 </p>
                 <div className='flex justify-between align-bottom'>
                     <PillList pills={props.skills}/>
-                   {/*  <span className='uppercase text-sm opacity-50 self-end leading-none'>
-                        2019 - Present
-                    </span> */}
                 </div>
             </Link>
         </li>

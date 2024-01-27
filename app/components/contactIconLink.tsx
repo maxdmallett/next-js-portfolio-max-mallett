@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 interface ContactIconLinkProps {
     href: string;
@@ -7,19 +7,18 @@ interface ContactIconLinkProps {
 }
 
 const ContactIconLink = (props: ContactIconLinkProps) => {
-    const { href, label, icon } = props
+    const { href, label, icon } = props;
     return (
-        <a 
+        <a
             className="block hover:text-slate-200 p-5 sm:p-10 bg-black/20 rounded-xl mx-3"
             href={`${href}`}
-            target="_blank" 
+            target="_blank"
             rel="noreferrer noopener"
             aria-label={`${label} (opens in a new tab)`}
         >
             {icon}
         </a>
-    )
-}
+    );
+};
 
-export default ContactIconLink
-
+export default ContactIconLink;
