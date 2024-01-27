@@ -15,18 +15,18 @@ export const metadata: Metadata = {
     themeColor: '#171717',
     colorScheme: 'dark',
     viewport: 'width=device-width, initial-scale=1.0',
-    alternates: { canonical: 'https://maxmallett.com' },
+    alternates: { canonical: 'https://maxmallett.co.uk' },
     icons: '/images/favicon.png',
     openGraph: {
         type: 'website',
-        url: 'https://maxmallett.com',
+        url: 'https://maxmallett.co.uk',
         title: 'Max Mallett | Frontend Developer',
         description:
             'I specialise in building user interfaces for web applications.',
         siteName: 'Max Mallett Portfolio',
         images: [
             {
-                url: 'https://maxmallett.com/images/og.png',
+                url: 'https://maxmallett.co.uk/images/og.png',
             },
         ],
     },
