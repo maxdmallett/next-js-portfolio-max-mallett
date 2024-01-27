@@ -4,7 +4,7 @@ Welcome to my portfolio website repo! To run locally, follow the instructions be
 
 Visit the [live site](http://www.maxmallett.co.uk).
 
-## Getting Started
+## Running Locally
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
