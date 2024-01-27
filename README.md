@@ -1,6 +1,6 @@
 ## Max Mallett Portfolio Website
 
-Welcome to my portfolio website repo! To run locally, follow the instructions below.
+Welcome to my portfolio website repo!
 
 Visit the [live site](http://www.maxmallett.co.uk).
 
