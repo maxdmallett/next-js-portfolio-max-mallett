@@ -20,11 +20,11 @@ const IR35ShieldReactMigrationArticle = () => {
             </figure>
 
             <p>
-                This project marks the migration of an existing dashboard built with .NET Razor and Vanilla JS on the frontend, to one that uses React and Typescript. The transition aims to enhance the user experience and leverage the benefits of a modern frontend framework.
+                This project marked the migration of an existing dashboard built with .NET Razor and Vanilla JS on the frontend, to one that uses React and Typescript. The transition aimed to enhance the user experience and leverage the benefits of a modern frontend framework.
             </p>
 
             <p>
-                As the IR35 Shield dashboard has grown more complex throughout development, it has become increasingly difficult to manage the scale of the frontend code using Vanilla Javascript alone. Migrating to React would give us the ability to split UI elements into small, self-contained components, keeping the code more manageable as the application scales up in size.
+                As the IR35 Shield dashboard had grown more complex throughout development, it had become increasingly difficult to manage the scale of the frontend code using Vanilla Javascript alone. Migrating to React would give us the ability to split UI elements into small, self-contained components, keeping the code more manageable as the application scales up in size.
             </p>
 
             <p>
@@ -92,41 +92,9 @@ const IR35ShieldReactMigrationArticle = () => {
                 At the start of the migration process, I decided to use React Context to store the global state. As the migration process developed, I soon realised that Redux would be more appropriate for the following purposes - handling a large amount of state, containing complex update logic, and having the ability to dispatch state changes from any component. I swapped out Context for <InlineLink href="https://redux-toolkit.js.org/">Redux Toolkit</InlineLink>, resulting in a much more robust state management solution.
             </p>
 
-            <h6 className='mb-2'>
-                The Redux store comprised of the following:
-            </h6>
-
-            <ul className='list-disc list-inside mb-10'>
-                <li>
-                    consumables: <span className='italic'>credits, seats</span>
-                </li>
-                <li>
-                    licence: <span className='italic'>expiry date, has expired, show expiry warning</span>
-                </li>
-                <li>
-                    plan: <span className='italic'>id, name</span>
-                </li>
-                <li>
-                    account: <span className='italic'>name, subdomain, active settings</span>
-                </li>
-                <li>
-                    user: <span className='italic'>name, email, display preferences</span>
-                </li>
-               
-            </ul>
-
-            <figure className="block mb-12">
-                <Image
-                    src="/images/ir35shieldreact/shield-react-redux-store-1.png"
-                    alt="Setting up the Redux store"
-                    width={800}
-                    height={442}
-                    className='rounded-md border border-zinc-200 shadow-sm'
-                />
-                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                    Setting up the Redux store
-                </figcaption>
-            </figure>
+            <p>
+                The Redux store comprised of consumables, plan, and user account information.
+            </p>
 
             <h4 className='text-lg font-bold mb-5'>
                 Unit tests
@@ -161,19 +129,6 @@ const IR35ShieldReactMigrationArticle = () => {
                 I decided to use <InlineLink href="https://react-hook-form.com/">React Hook Form</InlineLink> in this app for the following reasons: registering each input to a property of the model feels robust, the ‘required’ property options for validation offer great flexibility, and the documentation is easy to understand. The handle submit method only fires when validation passes, so you have confidence that posts to the API are only happening when they should.
             </p>
 
-            <figure className="block mb-12">
-                <Image
-                    src="/images/ir35shieldreact/shield-react-form-1.png"
-                    alt="Form built with React Hook Form"
-                    width={800}
-                    height={340}
-                    className='rounded-md border border-zinc-200 shadow-sm'
-                />
-                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                    Form built with React Hook Form
-                </figcaption>
-            </figure>
-
             <h4 className='text-lg font-bold mb-5'>
                 Live updates with SignalR
             </h4>
@@ -181,19 +136,6 @@ const IR35ShieldReactMigrationArticle = () => {
             <p>
                 To handle live display updates when consumables are spent, we used <InlineLink href="https://dotnet.microsoft.com/en-us/apps/aspnet/signalr">SignalR</InlineLink> websockets via a Typescript interface. For example, when a credit is spent, the credits hub dispatches a method to update the consumables state in Redux. Every component that makes use of the credits property in Redux is then automatically re-rendered with the new value.
             </p>
-
-            <figure className="block mb-12">
-                <Image
-                    src="/images/ir35shieldreact/shield-react-signalr-dispatch-1.png"
-                    alt="Credit updates dispatched via SignalR"
-                    width={800}
-                    height={97}
-                    className='rounded-md border border-zinc-200 shadow-sm'
-                />
-                <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                    Credit updates dispatched via SignalR
-                </figcaption>
-            </figure>
 
             <h4 className='text-lg font-bold mb-5'>
                 Outcome

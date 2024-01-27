@@ -20,7 +20,7 @@ const IR35ShieldBlogArticle = () => {
             </figure>
 
             <p>
-                The specification for this project was to design and create a blog area on the IR35 Shield website. The main goals were to enhance user engagement, establish thought leadership, and boost SEO. Regular, relevant content educates users, attracts organic traffic, and fosters a community, ultimately contributing to brand credibility and customer retention.
+                The specification for this project was to design and create a blog area on the IR35 Shield website. The main goals were to enhance user engagement and boost SEO. Regular, relevant content educates users, attracts organic traffic, and fosters a community, ultimately contributing to brand credibility and customer retention.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -89,7 +89,7 @@ const IR35ShieldBlogArticle = () => {
             </h4>
 
             <p>
-                The IR35 Shield blog still receives regular updates, with new articles published regularly. The article editor has been well received by other members of the team, with plans for it to be added to IR35 Shield’s sister site, <InlineLink href="https://contractorcalculator.co.uk/">Contractor Calculator</InlineLink>, in the near future.
+                The IR35 Shield blog still receives regular updates, with new articles published regularly. The article editor has been well received by other members of the team, with plans for it to be used in other projects in the near future.
             </p>
 
             <p>
