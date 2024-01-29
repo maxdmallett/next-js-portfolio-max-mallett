@@ -7,15 +7,15 @@ const Hero = () => {
     return (
         <header id="hero" className='text-center h-screen flex flex-col justify-center'>
            
-            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-slate-200 mb-5">
+            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-slate-200 mb-3 sm:mb-5">
                 Max Mallett
             </h1>
 
-            <h2 className='text-3xl sm:text-6xl font-extrabold text-slate-500 mb-6'>
+            <h2 className='text-4xl sm:text-6xl tracking-tighter sm:tracking-tight font-extrabold text-slate-500 mb-8 sm:mb-6'>
                 Frontend Developer
             </h2>
 
-            <p className='mb-12 text-lg pb-3 max-w-xl mx-auto'>
+            <p className='text-lg pb-3 max-w-xl mx-auto mb-8 sm:mb-12'>
                 I specialise in building user interfaces for web applications. Currently working at <a href='https://www.ir35shield.co.uk/' className='text-primary-500 hover:underline whitespace-nowrap'>IR35 Shield</a>.
             </p>
 
