@@ -28,7 +28,7 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
     return (
         <div
             className={`
-            mobile-nav-menu fixed top-0 left-0 w-full h-screen bg-primary-950 z-50 px-5
+            mobile-nav-menu fixed top-0 left-0 w-full h-screen bg-primary-950 z-50 px-5 lg:hidden
             ${visible ? 'open' : ''}
         `}
         >
