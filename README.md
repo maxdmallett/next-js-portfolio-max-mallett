@@ -1,6 +1,6 @@
 ## Max Mallett Portfolio Website
 
-Welcome to my portfolio website repo!
+Welcome to my portfolio website repository.
 
 Visit the [live site](http://www.maxmallett.co.uk).
 
