@@ -54,10 +54,10 @@ const AmbrasoftArticle = () => {
                 The harder rounds have a larger grid of cards and the gorilla has a better memory of which cards he has already seen, making him more likely to pick correct pairs.
             </p>
 
-            <CodeSnippet
+            {/* <CodeSnippet
                 code={ambrasoftGregoryMemorySnippet}
                 caption='Logic for CPU picking a matching pair of cards'
-            />
+            /> */}
 
             <h4 className='mb-5'>
                 <span className='text-lg font-bold'>Brick Donk</span> <span className='italic text-sm'>(new game)</span>
@@ -80,10 +80,10 @@ const AmbrasoftArticle = () => {
                 </figcaption>
             </figure>
 
-            <CodeSnippet
+            {/* <CodeSnippet
                 code={ambrasoftBrickDonkBrickFillDrawSnippet}
                 caption='Dynamically fill and draw bricks on the canvas'
-            />
+            /> */}
 
             <h4 className='mb-5'>
                 <span className='text-lg font-bold'>Word Search</span> <span className='italic text-sm'>(converted game)</span>
@@ -110,11 +110,11 @@ const AmbrasoftArticle = () => {
                 The words are pushed into a 2d grid array in random directions. The attempted string is calculated using the XY coordinates of the highlight shape start and end points. 
             </p>
 
-            <CodeSnippet
+            {/* <CodeSnippet
                 code={ambrasoftWordsearchSnippet}
                 caption='Get the attempted string from XY coordinates'
             />
-
+ */}
             <h6>Technologies Used:</h6>
 
             <ul className='list-disc list-inside mb-10'>
