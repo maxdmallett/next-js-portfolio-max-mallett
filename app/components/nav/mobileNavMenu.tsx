@@ -69,7 +69,7 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
                 ))}
                 <li>
                     <Link
-                        href="/docs/Max%20Mallett%20CV.pdf"
+                        href="/docs/Max_Mallett_Frontend_Developer_CV.pdf"
                         target="_blank"
                         className="block px-4 py-2 mb-3 text-lg font-normal text-primary-300 uppercase"
                     >
