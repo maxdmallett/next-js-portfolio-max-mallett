@@ -28,7 +28,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </p>
 
             <p>
-                Migrating to React would allow us to create a richer UI that responds to changes in state or data updates without requiring page reloads, providing a more seamless experience for the user. I was tasked with leading the frontend part of this project and given the responsibility of choosing which tools and packages to use; I was also required to substantiate my decision making with valid reasoning.
+                Migrating to React would allow us to create a richer UI that responds to changes in state or data updates without requiring page reloads, providing a more seamless experience for the user. I was tasked with leading the frontend part of this project and given the responsibility of choosing which tools and packages to use.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -81,7 +81,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </ul>
 
             <p>
-                Some of these components contained complex business logic previously written in C# in the Razor pages. For example, the sidebar contains a list of features that are only available at certain tiers of the membership plan. The logic was rewritten into the React components using Typescript. Several components across the application would need to contain display logic that depended on information about the logged-in user account. This meant that a global state was required to store information about the user.
+                Some of these components contained complex business logic previously written in C# in the Razor pages. For example, the sidebar contains a list of features that are only available at certain tiers of the membership plan. The logic was rewritten into the React components using Typescript. Several components across the application would need to contain display logic dependedant on user account information. This meant that a global state was required to store information about the user.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -89,11 +89,11 @@ const IR35ShieldReactMigrationArticle = () => {
             </h4>
 
             <p>
-                At the start of the migration process, I decided to use React Context to store the global state. As the migration process developed, I soon realised that Redux would be more appropriate for the following purposes - handling a large amount of state, containing complex update logic, and having the ability to dispatch state changes from any component. I swapped out Context for <InlineLink href="https://redux-toolkit.js.org/">Redux Toolkit</InlineLink>, resulting in a much more robust state management solution.
+                At the start of the migration process, I decided to use React Context to store the global state. As the migration process developed, I soon realised that Redux would be more appropriate for the following purposes - handling a large amount of state, containing complex update logic, and only re-rendering components that depend on the changed state. I swapped out Context for <InlineLink href="https://redux-toolkit.js.org/">Redux Toolkit</InlineLink>, resulting in a much more robust state management solution. 
             </p>
 
             <p>
-                The Redux store comprised of consumables, plan, and user account information.
+                The Redux store comprised of consumables, subscription plan, and user account information.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -142,7 +142,15 @@ const IR35ShieldReactMigrationArticle = () => {
             </h4>
 
             <p>
-                The conversion process is still ongoing; however, the adoption of React with TypeScript has given us a modern codebase that aligns with industry standards and sets the foundation for future enhancements.
+                The adoption of React with TypeScript has given us a modern codebase that aligns with industry standards and sets the foundation for future enhancements.
+            </p>
+
+            <h4 className='text-lg font-bold mb-5'>
+                Alternative approach
+            </h4>
+
+            <p>
+                An alternative approach to this migration could have been to replace elements within the page incrementally, rather than replacing whole pages with React. This would have reduced the initial migration effort and allowed for a more gradual transition.
             </p>
 
             <h6>Technologies Used:</h6>
