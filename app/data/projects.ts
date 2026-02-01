@@ -5,6 +5,7 @@ import HyperfoxBandArticle from "../components/projects/articles/hyperfoxBandArt
 import IR35ShieldBlogArticle from "../components/projects/articles/ir35ShieldBlogArticle";
 import IR35ShieldReactMigrationArticle from "../components/projects/articles/ir35ShieldReactMigrationArticle";
 import PortfolioArticle from "../components/projects/articles/portfolioArticle";
+import PubgStatsArticle from "../components/projects/articles/pubgStatsArticle";
 import VinniedropArticle from "../components/projects/articles/vinniedropArticle";
 export interface Project {
     slug: string;
@@ -14,6 +15,7 @@ export interface Project {
     skills: string[];
     articleContent: () => React.JSX.Element;
     websiteUrl?: string;
+    featured?: boolean;
 }
 
 export const projects: Project[] = [
@@ -23,7 +25,8 @@ export const projects: Project[] = [
         shortDescription: 'Frontend project leader for converting a SaaS product dashboard from Vanilla JS to React with Typescript. Integrated several NPM packages and fully unit tested using Jest.',
         thumbnailImageUrl: '/images/ir35shieldreact/shield-react-project-thumbnail.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
-        articleContent: IR35ShieldReactMigrationArticle
+        articleContent: IR35ShieldReactMigrationArticle,
+        featured: true,
     },
     {
         slug: 'ir35-shield-blog',
@@ -33,6 +36,7 @@ export const projects: Project[] = [
         skills: ['HTML', 'SCSS', 'Javascript', 'Bootstrap', 'XD'],
         articleContent: IR35ShieldBlogArticle,
         websiteUrl: 'https://www.ir35shield.co.uk/Articles/',
+        featured: true,
     },
     {
         slug: 'maxmallett-portfolio-website',
@@ -40,7 +44,17 @@ export const projects: Project[] = [
         shortDescription: 'My portfolio website, created to showcase some of the professional and personal projects I have completed. Built using NextJS, Typescript, Tailwind, and deployed on Vercel.',
         thumbnailImageUrl: '/images/portfolio/portfolio-project-thumbnail-1.png',
         skills: ['NextJS', 'Typescript', 'Tailwind', 'Figma', 'Vercel'],
-        articleContent: PortfolioArticle
+        articleContent: PortfolioArticle,
+        featured: true,
+    },
+    {
+        slug: 'pubg-stats',
+        title: 'PUBG Stats Tracker',
+        shortDescription: 'Personal project for experimenting with React Native and Expo. Overcoming rate limiting challenges and integrating real-time data.',
+        thumbnailImageUrl: '/images/pubgstats/pubg-stats-project-thumbnail-1.png',
+        skills: ['React Native', 'Expo', 'Typescript', 'Express', 'MongoDB'],
+        articleContent: PubgStatsArticle,
+        featured: true,
     },
     {
         slug: 'blue-chip-holidays-search-results-page',
@@ -49,6 +63,7 @@ export const projects: Project[] = [
         thumbnailImageUrl: '/images/bluechip/bluechip-project-thumbnail.png',
         skills: ['Javascript', 'HTML', 'CSS', 'Spectre CSS'],
         articleContent: BlueChipSearchResultsArticle,
+        featured: true,
     },
     {
         slug: 'nextjs-migration-deedeecare',

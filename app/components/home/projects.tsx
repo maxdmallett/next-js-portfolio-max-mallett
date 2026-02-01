@@ -11,7 +11,7 @@ const Projects = () => {
             <SectionHeading title="Projects" />
 
             <ul className="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
-                {projects.slice(0, 4).map((project, index) => (
+                {projects.filter(project => project.featured).map((project, index) => (
                     <ProjectCard
                         {...project}
                         key={index}
