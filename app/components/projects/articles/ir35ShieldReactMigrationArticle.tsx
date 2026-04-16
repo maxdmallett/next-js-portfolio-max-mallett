@@ -23,20 +23,12 @@ const IR35ShieldReactMigrationArticle = () => {
                 This project marked the migration of an existing dashboard built with .NET Razor and Vanilla JS on the frontend, to one that uses React and Typescript. The transition aimed to enhance the user experience and leverage the benefits of a modern frontend framework.
             </p>
 
-            <p>
-                As the IR35 Shield dashboard had grown more complex throughout development, it had become increasingly difficult to manage the scale of the frontend code using Vanilla Javascript alone. Migrating to React would give us the ability to split UI elements into small, self-contained components, keeping the code more manageable as the application scales up in size.
-            </p>
-
-            <p>
-                Migrating to React would allow us to create a richer UI that responds to changes in state or data updates without requiring page reloads, providing a more seamless experience for the user. I was tasked with leading the frontend part of this project and given the responsibility of choosing which tools and packages to use.
-            </p>
-
             <h4 className='text-lg font-bold mb-5'>
                 Approach
             </h4>
 
             <p>
-                The team decided that we would convert a single page as the first step, including the global features that exist on all dashboard pages: the navbar, sidebar, user menus, and global modals. Subsequently, multiple frontend components required conversion before our first page went live. The UI design was kept the same to reduce the number of variables on this project.
+                Elements were migrated within the page incrementally, rather than replacing whole pages. This allowed for a more gradual transition where smaller changes could be pushed to production more frequently, reducing the risk of introducing bugs and preventing stale branches.
             </p>
 
             <h4 className='text-lg font-bold mb-5'>
@@ -80,10 +72,6 @@ const IR35ShieldReactMigrationArticle = () => {
                 </li>
             </ul>
 
-            <p>
-                Some of these components contained complex business logic previously written in C# in the Razor pages. For example, the sidebar contains a list of features that are only available at certain tiers of the membership plan. The logic was rewritten into the React components using Typescript. Several components across the application would need to contain display logic dependedant on user account information. This meant that a global state was required to store information about the user.
-            </p>
-
             <h4 className='text-lg font-bold mb-5'>
                 Global State Management with Redux
             </h4>
@@ -101,7 +89,7 @@ const IR35ShieldReactMigrationArticle = () => {
             </h4>
 
             <p>
-                I used <InlineLink href="https://jestjs.io/">Jest</InlineLink> and <InlineLink href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</InlineLink> to create unit tests for all of the new Typescript components. Components that were dependent on global state were tested inside a redux provider, which allows custom test cases for every state. Over 400 unit tests were written in total.
+                I used <InlineLink href="https://jestjs.io/">Jest</InlineLink> and <InlineLink href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</InlineLink> to create unit tests for all of the new Typescript components. Components that were dependent on global state were tested inside a redux provider, which allows custom test cases for every state.
             </p>
 
             <figure className="block mb-12">
@@ -143,14 +131,6 @@ const IR35ShieldReactMigrationArticle = () => {
 
             <p>
                 The adoption of React with TypeScript has given us a modern codebase that aligns with industry standards and sets the foundation for future enhancements.
-            </p>
-
-            <h4 className='text-lg font-bold mb-5'>
-                Alternative approach
-            </h4>
-
-            <p>
-                An alternative approach to this migration could have been to replace elements within the page incrementally, rather than replacing whole pages with React. This would have reduced the initial migration effort and allowed for a more gradual transition.
             </p>
 
             <h6>Technologies Used:</h6>

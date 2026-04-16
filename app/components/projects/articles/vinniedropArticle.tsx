@@ -20,11 +20,11 @@ const VinniedropArticle = () => {
             </figure>
 
             <p>
-                In 2017, I embarked on a personal project - developing the Vinnie Drop mobile game. My inspiration stemmed from the <InlineLink href="https://en.wikipedia.org/wiki/List_of_Net_Yaroze_games">Net Yaroze</InlineLink> game <InlineLink href="https://www.youtube.com/watch?v=tnNNviak-Sk&ab_channel=ACRetro">&apos;Down&apos;</InlineLink>,  a discovery from my childhood days playing a PlayStation 1 demo disk.
+                In 2017, I embarked on a personal project - developing the Vinnie Drop mobile game. My inspiration stemmed from the <InlineLink href="https://en.wikipedia.org/wiki/List_of_Net_Yaroze_games">Net Yaroze</InlineLink> game <InlineLink href="https://www.youtube.com/watch?v=tnNNviak-Sk&ab_channel=ACRetro">&apos;Down&apos;</InlineLink>,  originally released on a PlayStation 1 demo disk.
             </p>
 
             <p>
-                The gameplay involves guiding a character&apos;s descent through a vertical platform level. The controls are intuitive; a simple left or right movement using the d-pad. Recognising the seamless adaptability of these controls to mobile devices, I used touch events on each side of the screen for character manipulation.
+                The gameplay involves guiding a character&apos;s descent through a vertical platform level. The controls are intuitive; a simple left or right movement using the d-pad. The simplicity of these controls allowed me to use touch events on each side of the screen for character manipulation.
             </p>
 
             <figure className="block mb-12">
@@ -41,7 +41,7 @@ const VinniedropArticle = () => {
             </figure>
 
             <p>
-                Drawing upon my proficiency in crafting vector artwork with Flash, I meticulously created all graphical assets from scratch. To maintain precise control over every aspect of the game mechanics, I developed a custom game engine.
+                Drawing upon my experience in creating vector artwork with Flash, I created all graphical assets from scratch. To maintain precise control over every aspect of the game mechanics, I developed a custom game engine.
             </p>
 
             <p>
@@ -102,7 +102,6 @@ const VinniedropArticle = () => {
                     Photoshop
                 </li>
             </ul>
-           
         </>
     )
 }

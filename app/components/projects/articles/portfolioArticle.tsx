@@ -6,11 +6,7 @@ const PortfolioArticle = () => {
         <>
 
             <p>
-                Welcome to my portfolio site!
-            </p>
-
-            <p>
-                If you’d like to dig into the code, check out the <InlineLink href="https://github.com/maxdmallett/next-js-portfolio-max-mallett">Github Repo</InlineLink>.
+               Check it out on <InlineLink href="https://github.com/maxdmallett/next-js-portfolio-max-mallett">Github</InlineLink>.
             </p>
 
             <h6>Technologies used:</h6>

@@ -28,7 +28,7 @@ const IR35ShieldBlogArticle = () => {
             </h4>
 
             <p>
-                In the design phase, I researched several popular blog websites across the web, seeking effective design techniques and popular features. I particularly liked the design of articles on <InlineLink href="https://medium.com/">Medium</InlineLink>; the narrow maximum width of paragraphs and high line heights make the content easy to digest. Each article is presented with a focus on information structure. Details such as author name, publication date, and article image are displayed in a concise and user-friendly format. Social media sharing buttons were added to increase organic traffic.
+                In the design phase, I researched several popular blog websites across the web, seeking effective design techniques and popular features. I particularly liked the design of articles on <InlineLink href="https://medium.com/">Medium</InlineLink>; the narrow maximum width of paragraphs and high line heights make the content easy to digest.  Details such as author name, publication date, and article image are displayed in a concise and user-friendly format. Social media sharing buttons were added to increase organic traffic.
             </p>
 
             <figure className="block mb-12">
@@ -89,11 +89,7 @@ const IR35ShieldBlogArticle = () => {
             </h4>
 
             <p>
-                The IR35 Shield blog still receives regular updates, with new articles published regularly. The article editor has been well received by other members of the team, with plans for it to be used in other projects in the near future.
-            </p>
-
-            <p>
-                Check out the IR35 Shield website to <InlineLink href="https://www.ir35shield.co.uk/Articles/">view the blog</InlineLink>.
+                The IR35 Shield blog still receives regular updates, with new articles published regularly. Check out the IR35 Shield website to <InlineLink href="https://www.ir35shield.co.uk/Articles/">view the blog</InlineLink>.
             </p>
 
             <h6>Technologies Used:</h6>

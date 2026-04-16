@@ -22,7 +22,7 @@ export const projects: Project[] = [
     {
         slug: 'react-migration-of-ir35-shield-dashboard',
         title: 'React migration of IR35 Shield Dashboard',
-        shortDescription: 'Frontend project leader for converting a SaaS product dashboard from Vanilla JS to React with Typescript. Integrated several NPM packages and fully unit tested using Jest.',
+        shortDescription: 'Frontend project leader for a migration project. Converted a SaaS product dashboard from Vanilla JS to React with Typescript. Global state management implemented using Redux. Fully unit tested using Jest and React Testing Library.',
         thumbnailImageUrl: '/images/ir35shieldreact/shield-react-project-thumbnail.png',
         skills: ['React', 'TypeScript', 'SCSS', 'Redux', 'Jest', 'RTL'],
         articleContent: IR35ShieldReactMigrationArticle,

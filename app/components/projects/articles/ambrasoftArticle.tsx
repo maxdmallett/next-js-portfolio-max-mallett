@@ -30,7 +30,7 @@ const AmbrasoftArticle = () => {
             </p>
 
             <h4 className='mb-5'>
-                <span className='text-lg font-bold'>Gorillarama</span> <span className='italic text-sm'>(new game)</span>
+                <span className='text-lg font-bold'>Gorillarama</span> <span className='italic text-sm'>(original)</span>
             </h4>
 
             <p>
@@ -60,7 +60,7 @@ const AmbrasoftArticle = () => {
             /> */}
 
             <h4 className='mb-5'>
-                <span className='text-lg font-bold'>Brick Donk</span> <span className='italic text-sm'>(new game)</span>
+                <span className='text-lg font-bold'>Brick Donk</span> <span className='italic text-sm'>(original)</span>
             </h4>
 
             <p>
@@ -86,7 +86,7 @@ const AmbrasoftArticle = () => {
             /> */}
 
             <h4 className='mb-5'>
-                <span className='text-lg font-bold'>Word Search</span> <span className='italic text-sm'>(converted game)</span>
+                <span className='text-lg font-bold'>Word Search</span> <span className='italic text-sm'>(conversion)</span>
             </h4>
 
             <p>

@@ -20,11 +20,11 @@ const HyperfoxBandArticle = () => {
             </figure>
 
             <p>
-                This project involved creating a website for Hyperfox, a band I used to play bass in. The primary goal of this project was to establish an engaging online platform that effectively showcased the band&apos;s music, videos, photos, and latest news.
+                This project involved creating a website for Hyperfox, who were a band I used to play bass in. The primary goal of this project was to establish an engaging online platform that effectively showcased the band&apos;s music, videos, photos, and latest news.
             </p>
 
             <p>
-                I started by designing a basic homepage in Photoshop and then built the site from there. Instead of using a framework like Bootstrap, I opted for a simple design and wrote custom CSS. To add some functionality, I used a bit of JavaScript for dynamic elements, audio playback, and a photo gallery.
+                Designed in Photoshop and built using custom CSS and JavaScript.
             </p>
 
             <h6>Technologies Used:</h6>
@@ -74,11 +74,7 @@ const HyperfoxBandArticle = () => {
             </figure>
 
             <p>
-                The site was hosted on cPanel via GoDaddy, and updates were pushed using FTP. The website served its purpose until 2022, when the band embarked on new ventures, prompting the decision to take the site offline.
-            </p>
-
-            <p>
-                Explore the project further on the <InlineLink href="https://github.com/maxdmallett/hyperfoxband.com">GitHub repository</InlineLink>.
+                The site was hosted on cPanel via GoDaddy, and updates were pushed using FTP. The website served its purpose until 2022, when the band embarked on new ventures, prompting the decision to take the site offline. View the source code on <InlineLink href="https://github.com/maxdmallett/hyperfoxband.com">GitHub</InlineLink>.
             </p>
 
             <p>
